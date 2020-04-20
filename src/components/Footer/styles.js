@@ -21,6 +21,15 @@ export const Container = styled.div`
       color: #fff;
     }
   }
+
+  @media screen and (max-width: 1020px) {
+    height: 100px;
+    > div {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
 `;
 
 export const a = 1;

@@ -31,6 +31,12 @@ export const Container = styled.nav`
     }
     cursor: pointer;
   }
+  @media screen and (max-width: 476px) {
+    .reach > h1 {
+      font-size: 12px;
+    }
+    width: 90%;
+  }
 `;
 
 export const NavButton = styled.div`
@@ -51,6 +57,12 @@ export const NavButton = styled.div`
     opacity: ${(props) => (props.active ? 1 : 0.5)};
     transition: 500ms;
     margin-top: 3px;
+  }
+
+  @media screen and (max-width: 476px) {
+    > text {
+      font-size: 14px;
+    }
   }
 
   &:hover {

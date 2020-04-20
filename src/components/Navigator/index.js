@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import history from '~/services/history';
 
@@ -7,11 +7,19 @@ import { Container, NavButton } from './styles';
 export default function Navigator() {
   const [home, setHome] = useState(true);
 
-  const handlePageChange = () => {
+  useEffect(() => {
     if (history.location.pathname === '/') {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }, [history]);
+
+  const handlePageChange = (id) => {
+    if (history.location.pathname === '/' && id === 1) {
       history.push('/mywork');
       setHome(false);
-    } else {
+    } else if (id === 0) {
       history.push('/');
       setHome(true);
     }
@@ -20,10 +28,10 @@ export default function Navigator() {
   return (
     <Container>
       <div className="navigator">
-        <NavButton active={home} onClick={handlePageChange}>
+        <NavButton active={home} onClick={() => handlePageChange(0)}>
           <text>Who am I?</text>
         </NavButton>
-        <NavButton active={!home} onClick={handlePageChange}>
+        <NavButton active={!home} onClick={() => handlePageChange(1)}>
           <text>My work</text>
         </NavButton>
       </div>
