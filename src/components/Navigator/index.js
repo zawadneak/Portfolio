@@ -1,11 +1,16 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState, useEffect } from 'react';
 
+import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 import history from '~/services/history';
 
-import { Container, NavButton } from './styles';
+import { Container, NavButton, AbsoluteBox } from './styles';
 
 export default function Navigator() {
   const [home, setHome] = useState(true);
+  const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
     if (history.location.pathname === '/') {
@@ -25,6 +30,14 @@ export default function Navigator() {
     }
   };
 
+  const handleGitHub = () => {
+    window.location.href = 'https://github.com/lucascassilha';
+  };
+
+  const handleLinkedin = () => {
+    window.location.href = 'https://www.linkedin.com/in/lcassilha/';
+  };
+
   return (
     <Container>
       <div className="navigator">
@@ -36,7 +49,21 @@ export default function Navigator() {
         </NavButton>
       </div>
       <div className="reach">
-        <h1>Get in touch</h1>
+        <h1 onClick={() => setHidden(!hidden)}>Get in touch</h1>
+        <AbsoluteBox hidden={hidden}>
+          <div onClick={handleGitHub}>
+            <div>
+              <FaGithubAlt color="#fff" size={25} />
+            </div>
+            <strong>GitHub</strong>
+          </div>
+          <div onClick={handleLinkedin}>
+            <div>
+              <FaLinkedinIn color="#fff" size={25} />
+            </div>
+            <strong>Linkedin</strong>
+          </div>
+        </AbsoluteBox>
       </div>
     </Container>
   );

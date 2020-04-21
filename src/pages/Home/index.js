@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from '~/components/Button';
 
@@ -9,14 +9,18 @@ import {
   BoxHolder,
   CourseWrapper,
   CoursesHolder,
+  AbsoluteBox,
 } from './styles';
 
 export default function Home() {
+  const [hidden, setHidden] = useState(true);
+
   return (
     <Container>
       <ScreenHolder>
         <Intro>
           <h1>Hello there!</h1>
+          <p>General Kenobi!</p>
           <h3>I'm Lucas, a fullstack and mobile developer.</h3>
         </Intro>
         <div>
@@ -53,7 +57,27 @@ export default function Home() {
                 applications, with a great value!
 </p>
               <div className="align">
-                <Button title="See more" />
+                <Button title="See all" onClick={() => setHidden(!hidden)} />
+                <AbsoluteBox hidden={hidden} onClick={() => setHidden(true)}>
+                  <h1>Techs</h1>
+                  <ul>
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>Node JS</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Docker</li>
+                    <li>Redis</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>NoSQL</li>
+                    <li>Firebase</li>
+                    <li>Figma</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                  </ul>
+                </AbsoluteBox>
               </div>
             </div>
           </BoxHolder>
@@ -61,22 +85,45 @@ export default function Home() {
             <h1>Courses</h1>
             <div>
               <CoursesHolder>
-                <div>
-                  <img
-                    src={require('~/assets/img/gostack.png')}
-                    alt="GoStack"
-                  />
-                </div>
+                <a
+                  href="https://rocketseat.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img
+                      src={require('~/assets/img/gostack.png')}
+                      alt="GoStack"
+                    />
+                  </div>
+                </a>
               </CoursesHolder>
               <CoursesHolder>
-                <div>
-                  <h2>UX & Design Thinking</h2>
-                </div>
+                <a
+                  href="https://www.udemy.com/course/html5-e-css3-tecnicas-avancadas-com-flexbox-e-3-projetos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img
+                      src={require('~/assets/img/html.png')}
+                      alt="html & css"
+                      id="html"
+                    />
+                    <h2>Advanced features</h2>
+                  </div>
+                </a>
               </CoursesHolder>
               <CoursesHolder>
-                <div>
-                  <h2>HTML5 & CSS3:Advanced features</h2>
-                </div>
+                <a
+                  href="https://www.udemy.com/course/ux-design/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img src={require('~/assets/img/ux.png')} alt="UX" />
+                  </div>
+                </a>
               </CoursesHolder>
             </div>
           </CourseWrapper>
@@ -94,10 +141,16 @@ export default function Home() {
                 to the computer science field!
               </p>
             </div>
-            <img
-              alt="UFPR"
-              src="https://www.ufpr.br/portalufpr/wp-content/uploads/2017/03/manual-de-marca_vetores-10.png"
-            />
+            <a
+              href="https://www.ufpr.br/portalufpr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="UFPR"
+                src="https://www.ufpr.br/portalufpr/wp-content/uploads/2017/03/manual-de-marca_vetores-10.png"
+              />
+            </a>
           </BoxHolder>
         </div>
       </ScreenHolder>

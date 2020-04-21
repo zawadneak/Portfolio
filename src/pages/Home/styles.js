@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+import { Animated } from 'react-animated-css';
+
 export const Container = styled.div`
   flex: 1;
   background-color: #112233;
@@ -14,6 +16,7 @@ export const ScreenHolder = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 
   @media screen and (max-width: 810px) {
     padding: 30px;
@@ -27,9 +30,16 @@ export const Intro = styled.div`
     font-weight: 900;
     font-style: italic;
     color: #fff;
+    margin: 0;
   }
   h3 {
     color: #fff;
+  }
+
+  p {
+    color: #fff;
+    opacity: 0.1;
+    margin: 0;
   }
 `;
 
@@ -61,6 +71,7 @@ export const BoxHolder = styled.div`
   }
 
   .align {
+    position: relative;
     align-self: stretch;
     display: flex;
     align-items: center;
@@ -71,6 +82,7 @@ export const BoxHolder = styled.div`
     flex-direction: ${(props) => (!props.flip ? 'column-reverse' : 'column')};
   }
   @media screen and (max-width: 428px) {
+    margin: 250px 0px;
     img {
       height: 150px;
     }
@@ -119,6 +131,7 @@ export const CoursesHolder = styled.div`
     background-color: #374c8d;
     border-radius: 4px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -140,11 +153,20 @@ export const CoursesHolder = styled.div`
       margin: 5px 0px;
     }
 
+    #html {
+      height: 120px;
+    }
+    @media screen and (max-width: 429px) {
+      #html {
+        height: 100px;
+      }
+    }
     h2 {
       font-family: 'Fira Sans', sans-serif;
       text-align: center;
-      font-size: 36px;
+      font-size: 32px;
       color: #fff;
+      margin-top: 10px;
     }
     @media screen and (max-width: 428px) {
       height: 200px;
@@ -156,5 +178,33 @@ export const CoursesHolder = styled.div`
         font-size: 24px;
       }
     }
+  }
+`;
+
+export const AbsoluteBox = styled.div`
+  cursor: pointer;
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #533c8d;
+  padding: 10px 20px;
+  width: 300px;
+  bottom: -220px;
+  position: absolute;
+  transform: ${(props) =>
+    props.hidden ? 'translateX(200%)' : 'translateX(0)'};
+  opacity: ${(props) => (props.hidden ? 0 : 1)};
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  h1 {
+    color: #fff;
+  }
+  ul {
+    columns: 2;
+  }
+  li {
+    color: #fff;
+    font-size: 18px;
   }
 `;

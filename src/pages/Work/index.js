@@ -75,9 +75,27 @@ export default function Work() {
               register problems. Those two applications are connected to a
               NodeJS backend, that processes and distributes the data!
             </p>
-            <Button title="Frontend code" />
-            <Button title="Backend code" />
-            <Button title="Mobile code" />
+            <a
+              href="https://github.com/lucascassilha/react-fastfeet/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Frontend code" />
+            </a>
+            <a
+              href="https://github.com/lucascassilha/node-fastfeet/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Backend code" />
+            </a>
+            <a
+              href="https://github.com/lucascassilha/react-native-fastfeet/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Mobile code" />
+            </a>
           </div>
           <div>
             <img
@@ -94,7 +112,13 @@ export default function Work() {
               This app is a GitHub user collector, that shows the libraries that
               the user gave a star!
             </p>
-            <Button title="See the code" />
+            <a
+              href="https://github.com/lucascassilha/gostack-react-native/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="See the code" />
+            </a>
           </div>
           <div>
             <img
@@ -111,7 +135,13 @@ export default function Work() {
               This is a basic facebook page built in ReactJS.It was project was
               made from scratch, without the use of create-react-app
             </p>
-            <Button title="See the code" />
+            <a
+              href="https://github.com/lucascassilha/gostack-basic-react/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="See the code" />
+            </a>
           </div>
           <div>
             <img
