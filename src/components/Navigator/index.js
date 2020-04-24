@@ -35,6 +35,10 @@ export default function Navigator() {
   };
 
   const handleLinkedin = () => {
+    window.location.href = 'https://www.linkedin.com/in/lcassilha/';
+  };
+
+  const handleDirect = () => {
     return history.push('/contact');
   };
 
@@ -63,7 +67,7 @@ export default function Navigator() {
             </div>
             <strong>Linkedin</strong>
           </div>
-          <div onClick={handleLinkedin}>
+          <div onClick={handleDirect}>
             <div>
               <FaPaperPlane color="#fff" size={20} />
             </div>

@@ -9,7 +9,12 @@ export default function Direct() {
     <Container>
       <ScreenHolder>
         <h1>Direct contact!</h1>
-        <form name="Contact" netlify>
+        <form
+          name="Contact"
+          netlify
+          data-netlify="true"
+          onSubmit={() => alert("Thank you for the message! I'll be in touch")}
+        >
           <input
             placeholder="Your email - so I can write you back!*"
             name="email"
