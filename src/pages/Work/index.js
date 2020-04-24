@@ -8,7 +8,7 @@ export default function Work() {
   return (
     <Container>
       <ScreenHolder>
-        <Intro>
+        <Intro id="top">
           <h1>My Work!</h1>
           <h3>
             Here you can see some of the projects that I have already developed,

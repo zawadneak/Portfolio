@@ -16,7 +16,7 @@ export default createGlobalStyle`
   body{
     -webkit-font-smoothing-:antialiased;
   }
-  body,input,button{
+  body,input,button,textarea{
     font-family: 'Lato','Roboto', sans-serif
   }
   a{
