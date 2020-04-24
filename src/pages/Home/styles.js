@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-import { Animated } from 'react-animated-css';
-
 export const Container = styled.div`
   flex: 1;
   background-color: #112233;

@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState, useEffect } from 'react';
 
-import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithubAlt, FaLinkedinIn, FaPaperPlane } from 'react-icons/fa';
 import history from '~/services/history';
 
 import { Container, NavButton, AbsoluteBox } from './styles';
@@ -35,7 +35,7 @@ export default function Navigator() {
   };
 
   const handleLinkedin = () => {
-    window.location.href = 'https://www.linkedin.com/in/lcassilha/';
+    return history.push('/contact');
   };
 
   return (
@@ -53,15 +53,21 @@ export default function Navigator() {
         <AbsoluteBox hidden={hidden}>
           <div onClick={handleGitHub}>
             <div>
-              <FaGithubAlt color="#fff" size={25} />
+              <FaGithubAlt color="#fff" size={20} />
             </div>
             <strong>GitHub</strong>
           </div>
           <div onClick={handleLinkedin}>
             <div>
-              <FaLinkedinIn color="#fff" size={25} />
+              <FaLinkedinIn color="#fff" size={20} />
             </div>
             <strong>Linkedin</strong>
+          </div>
+          <div onClick={handleLinkedin}>
+            <div>
+              <FaPaperPlane color="#fff" size={20} />
+            </div>
+            <strong>Direct</strong>
           </div>
         </AbsoluteBox>
       </div>

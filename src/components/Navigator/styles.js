@@ -81,8 +81,9 @@ export const NavButton = styled.div`
 `;
 
 export const AbsoluteBox = styled.div`
-  height: 110px;
+  height: 165px;
   width: 220px;
+  align-items: center
   background-color: green;
   position: absolute;
   margin-top: 35px;
@@ -98,7 +99,7 @@ export const AbsoluteBox = styled.div`
   opacity: ${(props) => (props.hidden ? 0 : 1)};
 
   div {
-    height: 50%;
+    height: 33%;
     padding: 10px;
     display: flex;
     flex-direction: row;
