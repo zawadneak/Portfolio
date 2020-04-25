@@ -22,7 +22,7 @@ export default function Direct() {
         method: 'POST',
         body: encode({ 'form-name': 'contact', email, description }),
       })
-        .then(() => alert('Success!'))
+        .then(() => alert("Thank you! I'll write you back"))
         .catch((error) => alert(error));
     }
   };
