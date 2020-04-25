@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState, useEffect } from 'react';
 
-import { FaGithubAlt, FaLinkedinIn, FaPaperPlane } from 'react-icons/fa';
+import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 import history from '~/services/history';
 
 import { Container, NavButton, AbsoluteBox } from './styles';
@@ -38,10 +38,6 @@ export default function Navigator() {
     window.location.href = 'https://www.linkedin.com/in/lcassilha/';
   };
 
-  const handleDirect = () => {
-    return history.push('/contact');
-  };
-
   return (
     <Container>
       <div className="navigator">
@@ -66,12 +62,6 @@ export default function Navigator() {
               <FaLinkedinIn color="#fff" size={20} />
             </div>
             <strong>Linkedin</strong>
-          </div>
-          <div onClick={handleDirect}>
-            <div>
-              <FaPaperPlane color="#fff" size={20} />
-            </div>
-            <strong>Direct</strong>
           </div>
         </AbsoluteBox>
       </div>
