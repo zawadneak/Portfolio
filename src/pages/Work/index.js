@@ -14,14 +14,6 @@ export default function Work() {
             Here you can see some of the projects that I have already developed,
             or that I am still working in!
           </h3>
-          <a
-            href="https://github.com/lucascassilha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            If you wish to see all the projects that I developed, please check
-            out my GitHub page
-          </a>
         </Intro>
         <BoxHolder>
           <div>
@@ -54,6 +46,42 @@ export default function Work() {
               src={require('~/assets/img/AppMaruska.png')}
               alt="Prints"
               id="maruska"
+            />
+          </div>
+        </BoxHolder>
+        <BoxHolder>
+          <div>
+            <img
+              src={require('~/assets/img/covid.svg')}
+              alt="Maruska"
+              id="title"
+            />
+            <p>
+              A webpage to compare COVID-19 with other diseases. The objective
+              here is to spread the idea that the coronavirus isn't just another
+              simple flu. People need to stay at home, wear a mask, and wash
+              their hands regularly.
+            </p>
+            <a
+              href="https://github.com/lucascassilha/COVIDComparative/tree/master"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Code" />
+            </a>
+            <a
+              href="https://covidcomparative.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Web page" />
+            </a>
+          </div>
+          <div>
+            <img
+              src={require('~/assets/img/covid.png')}
+              alt="Prints"
+              id="covid"
             />
           </div>
         </BoxHolder>
