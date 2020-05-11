@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react';
 
 import Button from '~/components/Button';
@@ -49,13 +50,12 @@ export default function Home() {
               <h1>Techs</h1>
               <p>
                 I have experience in
-                <span> React, React Native and NodeJS </span>
-- you can see more
+                <span> React, React Native and NodeJS </span>- you can see more
                 of what I have built, in My work section. Currently studying
                 Tensorflow (Python - AI), I always look into improving myself
                 not only as a developer but as someone that can build excellent
                 applications, with a great value!
-</p>
+              </p>
               <div className="align">
                 <Button title="See all" onClick={() => setHidden(!hidden)} />
                 <AbsoluteBox hidden={hidden} onClick={() => setHidden(true)}>
@@ -65,6 +65,7 @@ export default function Home() {
                     <li>React Native</li>
                     <li>Node JS</li>
                     <li>Javascript</li>
+                    <li>Typescript</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Docker</li>
