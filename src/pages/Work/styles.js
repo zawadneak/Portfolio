@@ -68,10 +68,17 @@ export const BoxHolder = styled.div`
     height: auto;
   }
 
+  #covid {
+    height: 500px;
+  }
+
   @media screen and (max-width: 626px) {
     #maruska {
       height: 300px;
       width: 350px;
+    }
+    #covid {
+      height: 300px;
     }
     #face {
       height: 200px;
@@ -86,6 +93,9 @@ export const BoxHolder = styled.div`
     #maruska {
       height: 200px;
       width: 250px;
+    }
+    #covid {
+      height: 200px;
     }
     #face {
       height: 150px;
