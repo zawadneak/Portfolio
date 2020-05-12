@@ -10,6 +10,7 @@ export const Container = styled.div`
   flex: 1;
   background-color: #112233;
   display: flex;
+  overflow: hidden;
   align-items: center;
 `;
 
