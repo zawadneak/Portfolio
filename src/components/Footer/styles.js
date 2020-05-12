@@ -18,6 +18,7 @@ export const Container = styled.div`
 
     text {
       max-width: 600px;
+      font-size: 12px;
       color: #fff;
     }
   }

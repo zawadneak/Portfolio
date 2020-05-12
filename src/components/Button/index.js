@@ -6,7 +6,7 @@ import { Wrapper } from './styles';
 export default function Button({ title, onClick }) {
   return (
     <Wrapper onClick={onClick}>
-      <strong>{title}</strong>
+      <strong>{title.toUpperCase()}</strong>
     </Wrapper>
   );
 }

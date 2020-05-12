@@ -1,8 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const FadeInAnimation = keyframes`
+  from { opacity: 0; transform: translateX(10%);}
+  to { opacity: 1;transform: translateX(0%) }
+`;
 
 export const Container = styled.div`
   flex: 1;
   background-color: #112233;
+  overflow: hidden;
 `;
 
 export const ScreenHolder = styled.div`
@@ -11,6 +17,8 @@ export const ScreenHolder = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
+  animation: ${FadeInAnimation} 1000ms;
 
   @media screen and (max-width: 810px) {
     padding: 30px;
@@ -44,12 +52,12 @@ export const BoxHolder = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20px;
     p {
       margin: 10px 0px;
       color: #fff;
       font-size: 18px;
-      letter-spacing: 1px;
-      line-height: 20px;
+      text-align: justify;
     }
     img {
       border-radius: 4px;
@@ -62,6 +70,7 @@ export const BoxHolder = styled.div`
 
   @media screen and (max-width: 1058px) {
     flex-direction: column;
+    margin-right: 0px;
   }
 
   #print {
