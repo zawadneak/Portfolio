@@ -57,10 +57,10 @@ export default function Work() {
               id="title"
             />
             <p>
-              A webpage to compare COVID-19 with other diseases. The objective
-              here is to spread the idea that the coronavirus isn't just another
-              simple flu. People need to stay at home, wear a mask, and wash
-              their hands regularly.
+              A webpage built in ReactJS and Typescript to compare COVID-19 with
+              other diseases. The objective here is to spread the idea that the
+              coronavirus isn't just another simple flu. People need to stay at
+              home, wear a mask, and wash their hands regularly.
             </p>
             <a
               href="https://github.com/lucascassilha/COVIDComparative/tree/master"

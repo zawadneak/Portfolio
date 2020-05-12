@@ -42,7 +42,7 @@ export default function Navigator() {
     <Container>
       <div className="navigator">
         <NavButton active={home} onClick={() => handlePageChange(0)}>
-          <text>Who am I?</text>
+          <text>Who am I</text>
         </NavButton>
         <NavButton active={!home} onClick={() => handlePageChange(1)}>
           <text>My work</text>

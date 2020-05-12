@@ -1,5 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { darken } from 'polished';
+
+const FadeInAnimation = keyframes`
+  from { opacity: 0; transform: translateX(10%);}
+  to { opacity: 1;transform: translateX(0%) }
+`;
 
 export const Container = styled.div`
   flex: 1;
@@ -15,6 +20,8 @@ export const ScreenHolder = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+
+  animation: ${FadeInAnimation} 1000ms;
 
   @media screen and (max-width: 810px) {
     padding: 30px;
