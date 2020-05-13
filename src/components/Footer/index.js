@@ -1,4 +1,5 @@
 import React from 'react';
+import intl from 'react-intl-universal';
 
 import { Container } from './styles';
 
@@ -7,10 +8,7 @@ export default function Footer() {
     <Container>
       <div>
         <text>@Lucas Cassilha Zawadneak - 2020</text>
-        <text>
-          In case you work for and NGO or are in need of some volunteer work to
-          build a webpage or an app, talk to me. I’ll be more than happy to help
-        </text>
+        <text>{intl.get('NGOdescription')}</text>
       </div>
     </Container>
   );

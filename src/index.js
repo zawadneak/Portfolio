@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import GlobalStyle from '~/styles/global';
 
-require('dotenv').config();
+import Translation from './locales/index';
+
+Translation();
 
 ReactDOM.render(
   <React.StrictMode>

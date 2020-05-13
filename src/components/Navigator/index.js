@@ -3,6 +3,8 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState, useEffect } from 'react';
 
+import intl from 'react-intl-universal';
+
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 import history from '~/services/history';
 
@@ -42,14 +44,14 @@ export default function Navigator() {
     <Container>
       <div className="navigator">
         <NavButton active={home} onClick={() => handlePageChange(0)}>
-          <text>Who am I</text>
+          <text>{intl.get('who')}</text>
         </NavButton>
         <NavButton active={!home} onClick={() => handlePageChange(1)}>
-          <text>My work</text>
+          <text>{intl.get('myWork')}</text>
         </NavButton>
       </div>
       <div className="reach">
-        <h1 onClick={() => setHidden(!hidden)}>Get in touch</h1>
+        <h1 onClick={() => setHidden(!hidden)}>{intl.get('getTouch')}</h1>
         <AbsoluteBox hidden={hidden}>
           <div onClick={handleGitHub}>
             <div>

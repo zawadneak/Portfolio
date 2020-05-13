@@ -1,5 +1,7 @@
+/* eslint-disable global-require */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react';
+import intl from 'react-intl-universal';
 
 import Button from '~/components/Button';
 
@@ -20,46 +22,30 @@ export default function Home() {
     <Container>
       <ScreenHolder>
         <Intro>
-          <h1>Hello there!</h1>
-          <p>General Kenobi!</p>
-          <h3>I'm Lucas, a fullstack and mobile developer.</h3>
+          <h1>{intl.get('helloThere')}</h1>
+          <h3>{intl.get('ImLucas')}</h3>
+          <p>{intl.get('kenobi')}</p>
         </Intro>
         <div>
           <BoxHolder>
             <div>
-              <h1>About me</h1>
-              <p>
-                I’m 18 years old and live in
-                <span> Curitiba, Brazil. </span>I develop
-                <span> web,mobile and backend applications </span>
-                in Javascript and occasionally Python. I’ve been programming
-                since I was 16 and fell in love with fullstack development,
-                where I can develop things that I love, and that can
-                <span> make a difference! </span>
-                My main goal as a developer is to build applications that can
-                <span> help people the best way possible. </span>
-                That's why I hope in the future to be a part of
-                <span> great projects!</span>
-              </p>
+              <h1>{intl.get('aboutMe')}</h1>
+              {intl.getHTML('aboutMeDescription')}
             </div>
             <img src={require('~/assets/img/profile.png')} alt="profile" />
           </BoxHolder>
           <BoxHolder flip>
             <img src={require('~/assets/img/techs.png')} alt="techs" />
             <div>
-              <h1>Techs</h1>
-              <p>
-                I have experience in
-                <span> React, React Native and NodeJS </span>- you can see more
-                of what I have built, in My work section. Currently studying
-                Tensorflow (Python - AI), I always look into improving myself
-                not only as a developer but as someone that can build excellent
-                applications, with a great value!
-              </p>
+              <h1>{intl.get('techs')}</h1>
+              <p>{intl.getHTML('techsDescription')}</p>
               <div className="align">
-                <Button title="See all" onClick={() => setHidden(!hidden)} />
+                <Button
+                  title={intl.get('seAll')}
+                  onClick={() => setHidden(!hidden)}
+                />
                 <AbsoluteBox hidden={hidden} onClick={() => setHidden(true)}>
-                  <h1>Techs</h1>
+                  <h1>{intl.get('techs')}</h1>
                   <ul>
                     <li>React</li>
                     <li>React Native</li>
@@ -83,7 +69,7 @@ export default function Home() {
             </div>
           </BoxHolder>
           <CourseWrapper>
-            <h1>Courses</h1>
+            <h1>{intl.get('courses')}</h1>
             <div>
               <CoursesHolder>
                 <a
@@ -111,7 +97,7 @@ export default function Home() {
                       alt="html & css"
                       id="html"
                     />
-                    <h2>Advanced features</h2>
+                    <h2>{intl.get('advancedFeatures')}</h2>
                   </div>
                 </a>
               </CoursesHolder>
@@ -130,17 +116,8 @@ export default function Home() {
           </CourseWrapper>
           <BoxHolder>
             <div>
-              <h1>Education</h1>
-              <p>
-                I am currently in the first year of my
-                <span> Systems Analyst degree </span>
-                at Universidade Federal do Paraná. I also have an
-                <span> engineering background, </span>
-                since I started at Biotechnology Engineering at the same
-                institution. Although I had the best semester grade in my class
-                (90/100), I fell in love with programming and decided to switch
-                to the computer science field!
-              </p>
+              <h1>{intl.get('education')}</h1>
+              <p>{intl.getHTML('educationDescription')}</p>
             </div>
             <a
               href="https://www.ufpr.br/portalufpr/"

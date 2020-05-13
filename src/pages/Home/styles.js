@@ -63,7 +63,7 @@ export const BoxHolder = styled.div`
   p {
     color: #fff;
     font-size: 14px;
-    letter-spacing: 1px;
+    text-align: justify;
     line-height: 20px;
   }
 
