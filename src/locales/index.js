@@ -7,9 +7,8 @@ const locales = {
 };
 
 const Translation = () => {
-  const currentLocale = locales[navigator.language]
-    ? navigator.language
-    : 'pt-BR';
+  console.log(`Your language: ${navigator.language}`);
+  const currentLocale = navigator.language === 'pt-BR' ? 'pt-BR' : 'en-US';
 
   return intl.init({
     currentLocale,
