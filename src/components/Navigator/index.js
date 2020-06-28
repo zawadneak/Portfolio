@@ -44,10 +44,10 @@ export default function Navigator() {
     <Container>
       <div className="navigator">
         <NavButton active={home} onClick={() => handlePageChange(0)}>
-          <text>{intl.get('who')}</text>
+          <strong>{intl.get('who')}</strong>
         </NavButton>
         <NavButton active={!home} onClick={() => handlePageChange(1)}>
-          <text>{intl.get('myWork')}</text>
+          <strong>{intl.get('myWork')}</strong>
         </NavButton>
       </div>
       <div className="reach">

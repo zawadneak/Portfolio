@@ -3,6 +3,7 @@ import { darken, lighten } from 'polished';
 
 export const Container = styled.nav`
   width: 80%;
+  max-width: 960px;
   align-self: center;
   height: 80px;
   background-color: #6c2b44;
@@ -43,7 +44,6 @@ export const Container = styled.nav`
     .reach > h1 {
       font-size: 12px;
     }
-    width: 90%;
   }
 `;
 
@@ -58,7 +58,7 @@ export const NavButton = styled.div`
   transition: 500ms;
   cursor: pointer;
 
-  > text {
+  > strong {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
@@ -97,6 +97,7 @@ export const AbsoluteBox = styled.div`
   transform: ${(props) =>
     props.hidden ? 'translateX(200%)' : 'translateX(0)'};
   opacity: ${(props) => (props.hidden ? 0 : 1)};
+
 
   div {
     height: 50%;

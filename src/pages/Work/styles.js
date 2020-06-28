@@ -6,7 +6,6 @@ const FadeInAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  flex: 1;
   background-color: #112233;
   overflow: hidden;
 `;

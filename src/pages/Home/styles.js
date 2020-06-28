@@ -7,7 +7,6 @@ const FadeInAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  flex: 1;
   background-color: #112233;
   display: flex;
   overflow: hidden;
@@ -16,8 +15,6 @@ export const Container = styled.div`
 
 export const ScreenHolder = styled.div`
   padding: 120px;
-  height: 100%;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
