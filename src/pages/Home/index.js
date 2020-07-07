@@ -50,6 +50,7 @@ export default function Home() {
                     <li>React</li>
                     <li>React Native</li>
                     <li>Node JS</li>
+                    <li>Vue JS</li>
                     <li>Javascript</li>
                     <li>Typescript</li>
                     <li>HTML</li>

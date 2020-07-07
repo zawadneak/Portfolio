@@ -47,7 +47,7 @@ export const Intro = styled.div`
 `;
 
 export const BoxHolder = styled.div`
-  margin: 200px 0px;
+  margin: 220px 0px;
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -192,7 +192,7 @@ export const AbsoluteBox = styled.div`
   background-color: #533c8d;
   padding: 10px 20px;
   width: 300px;
-  bottom: -220px;
+  bottom: -230px;
   position: absolute;
   transform: ${(props) =>
     props.hidden ? 'translateX(200%)' : 'translateX(0)'};

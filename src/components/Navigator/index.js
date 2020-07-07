@@ -20,7 +20,7 @@ export default function Navigator() {
     } else {
       setHome(false);
     }
-  }, [history]);
+  }, []);
 
   const handlePageChange = (id) => {
     if (history.location.pathname === '/' && id === 1) {
