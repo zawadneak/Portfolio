@@ -33,13 +33,6 @@ export default function Work() {
                 alt="Maruska"
               />
             </a>
-            <a
-              href="https://github.com/lucascassilha/maruska"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button title={intl.get('seeCode')} />
-            </a>
           </div>
           <div>
             <img

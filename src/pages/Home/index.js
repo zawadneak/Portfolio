@@ -74,7 +74,7 @@ export default function Home() {
             <div>
               <CoursesHolder>
                 <a
-                  href="https://rocketseat.com.br/"
+                  href="https://drive.google.com/file/d/1ibrr5lQrw3eTmm11aZTaCGwHdAZSMnmz/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +88,7 @@ export default function Home() {
               </CoursesHolder>
               <CoursesHolder>
                 <a
-                  href="https://www.udemy.com/course/html5-e-css3-tecnicas-avancadas-com-flexbox-e-3-projetos/"
+                  href="https://www.udemy.com/certificate/UC-OCKIO4IH/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -104,7 +104,7 @@ export default function Home() {
               </CoursesHolder>
               <CoursesHolder>
                 <a
-                  href="https://www.udemy.com/course/ux-design/"
+                  href="https://www.udemy.com/certificate/UC-92cb1974-e2e7-43ff-bbc3-2f5c25b030c7/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
