@@ -37,7 +37,7 @@ export default function Navigator() {
   };
 
   const handleLinkedin = () => {
-    window.location.href = 'https://www.linkedin.com/in/lcassilha/';
+    window.location.href = 'https://www.linkedin.com/in/lucaszawadneak/';
   };
 
   return (
