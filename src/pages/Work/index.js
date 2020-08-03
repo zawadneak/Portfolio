@@ -51,7 +51,7 @@ export default function Work() {
             />
             <p>{intl.get('covid')}</p>
             <a
-              href="https://github.com/lucascassilha/COVIDComparative/tree/master"
+              href="https://github.com/lucaszawadneak/COVIDComparative/tree/master"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,21 +82,21 @@ export default function Work() {
             />
             <p>{intl.get('fastfeet')}</p>
             <a
-              href="https://github.com/lucascassilha/react-fastfeet/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/react-fastfeet/blob/master/README.md"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button title={intl.get('frontend')} />
             </a>
             <a
-              href="https://github.com/lucascassilha/node-fastfeet/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/node-fastfeet/blob/master/README.md"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button title={intl.get('backend')} />
             </a>
             <a
-              href="https://github.com/lucascassilha/react-native-fastfeet/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/react-native-fastfeet/blob/master/README.md"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +116,7 @@ export default function Work() {
             <FaGithub size={150} color="#fff" />
             <p>{intl.get('github')}</p>
             <a
-              href="https://github.com/lucascassilha/gostack-react-native/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/gostack-react-native/blob/master/README.md"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -136,7 +136,7 @@ export default function Work() {
             <FaFacebookSquare size={150} color="#fff" />
             <p>{intl.get('facebook')}</p>
             <a
-              href="https://github.com/lucascassilha/gostack-basic-react/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/gostack-basic-react/blob/master/README.md"
               target="_blank"
               rel="noopener noreferrer"
             >

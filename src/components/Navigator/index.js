@@ -33,7 +33,7 @@ export default function Navigator() {
   };
 
   const handleGitHub = () => {
-    window.location.href = 'https://github.com/lucascassilha';
+    window.location.href = 'https://github.com/lucaszawadneak';
   };
 
   const handleLinkedin = () => {
