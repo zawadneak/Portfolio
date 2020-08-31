@@ -60,6 +60,8 @@ export const BoxHolder = styled.div`
     }
     img {
       border-radius: 4px;
+      max-height: 400px;
+      max-width: 400px;
     }
   }
 
