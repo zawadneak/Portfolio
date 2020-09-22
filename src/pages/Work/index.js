@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 import React from 'react';
-import { FaGithub, FaFacebookSquare } from 'react-icons/fa';
+import { FaGithub, FaSkull } from 'react-icons/fa';
 import intl from 'react-intl-universal';
 import Button from '~/components/Button';
 
@@ -133,19 +133,26 @@ export default function Work() {
         </BoxHolder>
         <BoxHolder>
           <div>
-            <FaFacebookSquare size={150} color="#fff" />
-            <p>{intl.get('facebook')}</p>
+            <FaSkull size={150} color="#fff" />
+            <p>{intl.get('monster-hunt')}</p>
             <a
-              href="https://github.com/lucaszawadneak/gostack-basic-react/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/monster-hunt"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button title={intl.get('seeCode')} />
             </a>
+            <a
+              href="https://lucaszawadneak.github.io/monster-hunt/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('webPage')} />
+            </a>
           </div>
           <div>
             <img
-              src={require('~/assets/img/facebook.png')}
+              src="https://nimbus-screenshots.s3.amazonaws.com/s/1b17c3ee1528d585b1726dfb1f77f10e.png"
               alt="Prints"
               id="face"
             />
