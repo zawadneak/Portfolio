@@ -25,5 +25,6 @@
   "frontend": "Código Frontend",
   "backend": "Código Backend",
   "mobile": "Código Mobile",
-  "webPage": "Página"
+  "webPage": "Página",
+  "stock": "Stock Trader foi minha primeira grande aplicação desenvolvida com VueJS, com o uso de diversas ferramentas como Vuex, router, e Vue Toasted. Além disso, esse projeto tem conexão com um backend em Firebase, que permite salvar ou carregar as suas ações compradas."
 }

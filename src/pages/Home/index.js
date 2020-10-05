@@ -88,17 +88,15 @@ export default function Home() {
               </CoursesHolder>
               <CoursesHolder>
                 <a
-                  href="https://www.udemy.com/certificate/UC-OCKIO4IH/"
+                  href="https://www.udemy.com/certificate/UC-8aab4dbd-bd00-457c-a34d-a9f3b08b419a/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div>
                     <img
-                      src={require('~/assets/img/html.png')}
-                      alt="html & css"
-                      id="html"
+                      src="https://miro.medium.com/max/1050/1*zyNSb0UXhP8TfxYbj-GNWg.png"
+                      alt="vue"
                     />
-                    <h2>{intl.get('advancedFeatures')}</h2>
                   </div>
                 </a>
               </CoursesHolder>

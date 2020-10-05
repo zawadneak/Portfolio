@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 import React from 'react';
-import { FaGithub, FaSkull } from 'react-icons/fa';
+import { FaChartLine, FaSkull } from 'react-icons/fa';
 import intl from 'react-intl-universal';
 import Button from '~/components/Button';
 
@@ -113,19 +113,26 @@ export default function Work() {
         </BoxHolder>
         <BoxHolder>
           <div>
-            <FaGithub size={150} color="#fff" />
-            <p>{intl.get('github')}</p>
+            <FaChartLine size={150} color="#fff" />
+            <p>{intl.get('stock')}</p>
             <a
-              href="https://github.com/lucaszawadneak/gostack-react-native/blob/master/README.md"
+              href="https://github.com/lucaszawadneak/stock-trader"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button title={intl.get('seeCode')} />
             </a>
+            <a
+              href="https://lucaszawadneak.github.io/stock-trader/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('webPage')} />
+            </a>
           </div>
           <div>
             <img
-              src={require('~/assets/img/github.png')}
+              src="https://nimbus-screenshots.s3.amazonaws.com/s/0223367b0f74c7fe87cdcbc6bf938c4b.png"
               alt="Prints"
               id="print"
             />
