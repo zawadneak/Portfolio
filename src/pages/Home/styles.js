@@ -6,6 +6,11 @@ const FadeInAnimation = keyframes`
   to { opacity: 1;transform: translateX(0%) }
 `;
 
+const JustFadeAnimation = keyframes`
+  from { opacity: 0;}
+  to { opacity: 1;}
+`;
+
 export const Container = styled.div`
   background-color: #112233;
   display: flex;
@@ -191,20 +196,20 @@ export const AbsoluteBox = styled.div`
   flex-direction: column;
   background-color: #533c8d;
   padding: 10px 20px;
-  width: 300px;
-  bottom: -230px;
+  width: 50%;
   position: absolute;
-  transform: ${(props) =>
-    props.hidden ? 'translateX(200%)' : 'translateX(0)'};
-  opacity: ${(props) => (props.hidden ? 0 : 1)};
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ${JustFadeAnimation} 300ms;
+
   border-radius: 4px;
 
   h1 {
     color: #fff;
   }
   ul {
-    columns: 2;
+    columns: 3;
   }
   li {
     color: #fff;

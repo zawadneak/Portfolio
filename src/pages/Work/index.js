@@ -45,8 +45,43 @@ export default function Work() {
         <BoxHolder>
           <div>
             <img
+              src={require('~/assets/img/PWORD.svg')}
+              alt="PWORD"
+              id="title"
+            />
+            <p>{intl.get('pword')}</p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.lcdev.pword"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                style={{ height: 80, marginLeft: -15 }}
+                src={require('~/assets/img/play.png')}
+                alt="PWORD"
+              />
+            </a>
+            <a
+              href="https://github.com/lucaszawadneak/pword"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('seeCode')} />
+            </a>
+          </div>
+          <div>
+            <img
+              src={require('~/assets/img/AppPWORD.jpg')}
+              alt="Prints"
+              id="maruska"
+            />
+          </div>
+        </BoxHolder>
+        <BoxHolder>
+          <div>
+            <img
               src={require('~/assets/img/covid.svg')}
-              alt="Maruska"
+              alt="Covid"
               id="title"
             />
             <p>{intl.get('covid')}</p>
@@ -67,7 +102,7 @@ export default function Work() {
           </div>
           <div>
             <img
-              src={require('~/assets/img/covid.png')}
+              src={require('~/assets/img/covid.jpg')}
               alt="Prints"
               id="covid"
             />

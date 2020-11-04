@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react';
 import intl from 'react-intl-universal';
+import Modal from '@material-ui/core/Modal';
 
 import Button from '~/components/Button';
 
@@ -16,7 +17,7 @@ import {
 } from './styles';
 
 export default function Home() {
-  const [hidden, setHidden] = useState(true);
+  const [techModalOpen, setModalOpen] = useState(true);
 
   return (
     <Container>
@@ -42,30 +43,8 @@ export default function Home() {
               <div className="align">
                 <Button
                   title={intl.get('seAll')}
-                  onClick={() => setHidden(!hidden)}
+                  onClick={() => setModalOpen(!techModalOpen)}
                 />
-                <AbsoluteBox hidden={hidden} onClick={() => setHidden(true)}>
-                  <h1>{intl.get('techs')}</h1>
-                  <ul>
-                    <li>React</li>
-                    <li>React Native</li>
-                    <li>Node JS</li>
-                    <li>Vue JS</li>
-                    <li>Javascript</li>
-                    <li>Typescript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Docker</li>
-                    <li>Redis</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                    <li>NoSQL</li>
-                    <li>Firebase</li>
-                    <li>Figma</li>
-                    <li>Python</li>
-                    <li>Git</li>
-                  </ul>
-                </AbsoluteBox>
               </div>
             </div>
           </BoxHolder>
@@ -130,6 +109,39 @@ export default function Home() {
             </a>
           </BoxHolder>
         </div>
+        <Modal
+          open={techModalOpen}
+          onClose={() => setModalOpen(!techModalOpen)}
+          aria-labelledby="title"
+          aria-describedby="description"
+        >
+          <AbsoluteBox>
+            <h1 id="title">{intl.get('techs')}</h1>
+            <ul id="description">
+              <li>React</li>
+              <li>React Native</li>
+              <li>Node JS</li>
+              <li>Vue JS</li>
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Dart</li>
+              <li>Flutter</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Docker</li>
+              <li>Redis</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>NoSQL</li>
+              <li>Mongoose</li>
+              <li>Sequelize</li>
+              <li>Firebase</li>
+              <li>Figma</li>
+              <li>Python</li>
+              <li>Git</li>
+            </ul>
+          </AbsoluteBox>
+        </Modal>
       </ScreenHolder>
     </Container>
   );
