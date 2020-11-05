@@ -29,24 +29,45 @@ export default function Home() {
         </Intro>
         <div>
           <BoxHolder>
+            <img
+              src={require('~/assets/img/profile.png')}
+              alt="profile"
+              style={{ height: 250, width: 250 }}
+            />
             <div>
               <h1>{intl.get('aboutMe')}</h1>
               {intl.getHTML('aboutMeDescription')}
             </div>
-            <img src={require('~/assets/img/profile.png')} alt="profile" />
           </BoxHolder>
-          <BoxHolder flip>
-            <img src={require('~/assets/img/techs.png')} alt="techs" />
+          <BoxHolder>
             <div>
               <h1>{intl.get('techs')}</h1>
               <p>{intl.getHTML('techsDescription')}</p>
-              <div className="align">
-                <Button
-                  title={intl.get('seAll')}
-                  onClick={() => setModalOpen(!techModalOpen)}
-                />
-              </div>
+
+              <Button
+                title={intl.get('seAll')}
+                onClick={() => setModalOpen(!techModalOpen)}
+              />
             </div>
+            <img src={require('~/assets/img/techs.png')} alt="techs" />
+          </BoxHolder>
+
+          <BoxHolder>
+            <div>
+              <h1>{intl.get('education')}</h1>
+              <p>{intl.getHTML('educationDescription')}</p>
+            </div>
+            <a
+              href="https://www.ufpr.br/portalufpr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                style={{ borderRadius: 20 }}
+                alt="UFPR"
+                src="https://www.ufpr.br/portalufpr/wp-content/uploads/2017/03/manual-de-marca_vetores-10.png"
+              />
+            </a>
           </BoxHolder>
           <CourseWrapper>
             <h1>{intl.get('courses')}</h1>
@@ -86,28 +107,23 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <div>
-                    <img src={require('~/assets/img/ux.png')} alt="UX" />
+                    <img src={require('~/assets/img/ux.svg')} alt="UX" />
+                  </div>
+                </a>
+              </CoursesHolder>
+              <CoursesHolder>
+                <a
+                  href="https://www.udemy.com/certificate/UC-OCKIO4IH/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img src={require('~/assets/img/html.svg')} alt="HTML" />
                   </div>
                 </a>
               </CoursesHolder>
             </div>
           </CourseWrapper>
-          <BoxHolder>
-            <div>
-              <h1>{intl.get('education')}</h1>
-              <p>{intl.getHTML('educationDescription')}</p>
-            </div>
-            <a
-              href="https://www.ufpr.br/portalufpr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                alt="UFPR"
-                src="https://www.ufpr.br/portalufpr/wp-content/uploads/2017/03/manual-de-marca_vetores-10.png"
-              />
-            </a>
-          </BoxHolder>
         </div>
         <Modal
           open={techModalOpen}

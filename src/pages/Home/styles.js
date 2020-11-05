@@ -103,6 +103,7 @@ export const CourseWrapper = styled.div`
   h1 {
     color: #fff;
     font-size: 21px;
+    margin-bottom: 10px;
   }
   p {
     color: #fff;
@@ -116,6 +117,7 @@ export const CourseWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 1172px) {
@@ -134,9 +136,9 @@ export const CoursesHolder = styled.div`
   align-items: center;
   justify-content: center;
   align-self: stretch;
+  margin-bottom: 10px;
 
   div {
-    background-color: #374c8d;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -153,11 +155,11 @@ export const CoursesHolder = styled.div`
     }
 
     &:hover {
-      background-color: ${darken(0.1, '#374C8D')};
+      background-color: ${darken(0.2, '#374C8D')};
     }
 
     img {
-      height: 200px;
+      height: 150px;
       margin: 5px 0px;
     }
 
