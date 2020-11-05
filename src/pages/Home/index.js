@@ -17,7 +17,7 @@ import {
 } from './styles';
 
 export default function Home() {
-  const [techModalOpen, setModalOpen] = useState(true);
+  const [techModalOpen, setModalOpen] = useState(false);
 
   return (
     <Container>

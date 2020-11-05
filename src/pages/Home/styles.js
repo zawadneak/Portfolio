@@ -190,7 +190,6 @@ export const CoursesHolder = styled.div`
 `;
 
 export const AbsoluteBox = styled.div`
-  cursor: pointer;
   transition: all 1s ease;
   display: flex;
   flex-direction: column;
