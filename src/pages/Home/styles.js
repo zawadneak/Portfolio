@@ -32,7 +32,7 @@ export const ScreenHolder = styled.div`
 `;
 
 export const Intro = styled.div`
-  margin: 180px 0px;
+  margin: 300px 0px;
   h1 {
     font-size: 72px;
     font-weight: 900;
@@ -52,15 +52,17 @@ export const Intro = styled.div`
 `;
 
 export const BoxHolder = styled.div`
-  margin: 220px 0px;
+  margin: 300px 0px;
   align-self: stretch;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   h1 {
     color: #fff;
     font-size: 21px;
+    margin-bottom: 10px;
   }
   p {
     color: #fff;
@@ -74,8 +76,9 @@ export const BoxHolder = styled.div`
   }
 
   img {
-    height: 300px;
-    margin: 0px 10px;
+    height: 250px;
+    width: 250px;
+    margin: 10px 20px;
   }
 
   .align {

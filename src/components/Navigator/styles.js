@@ -1,5 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { darken, lighten } from 'polished';
+
+const SlideInAnimation = keyframes`
+  from { transform: translateY(-100%);}
+  to { opacity:1;transform: translateY(0%) }
+`;
 
 export const Container = styled.nav`
   width: 80%;
@@ -20,6 +25,7 @@ export const Container = styled.nav`
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 1;
+  animation: ${SlideInAnimation} 1000ms;
 
   .navigator {
     height: 100%;

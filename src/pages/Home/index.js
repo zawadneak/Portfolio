@@ -28,11 +28,11 @@ export default function Home() {
           <p>{intl.get('kenobi')}</p>
         </Intro>
         <div>
-          <BoxHolder>
+          <BoxHolder flip>
             <img
               src={require('~/assets/img/profile.png')}
               alt="profile"
-              style={{ height: 250, width: 250 }}
+              style={{ height: 250, width: 250, marginRight: 30 }}
             />
             <div>
               <h1>{intl.get('aboutMe')}</h1>
@@ -49,25 +49,29 @@ export default function Home() {
                 onClick={() => setModalOpen(!techModalOpen)}
               />
             </div>
-            <img src={require('~/assets/img/techs.png')} alt="techs" />
+            <img
+              src={require('~/assets/img/techs.png')}
+              alt="techs"
+              style={{ marginLeft: 30 }}
+            />
           </BoxHolder>
 
-          <BoxHolder>
-            <div>
-              <h1>{intl.get('education')}</h1>
-              <p>{intl.getHTML('educationDescription')}</p>
-            </div>
+          <BoxHolder flip>
             <a
               href="https://www.ufpr.br/portalufpr/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                style={{ borderRadius: 20 }}
+                style={{ objectFit: 'cover', borderRadius: '100%' }}
                 alt="UFPR"
                 src="https://www.ufpr.br/portalufpr/wp-content/uploads/2017/03/manual-de-marca_vetores-10.png"
               />
             </a>
+            <div>
+              <h1>{intl.get('education')}</h1>
+              <p>{intl.getHTML('educationDescription')}</p>
+            </div>
           </BoxHolder>
           <CourseWrapper>
             <h1>{intl.get('courses')}</h1>
