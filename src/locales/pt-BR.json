@@ -27,5 +27,7 @@
   "mobile": "Código Mobile",
   "webPage": "Página",
   "pword":"Meu primeiro aplicativo desenvolvido com Flutter. PWORD é um gerador e cofre de senhas, que te ajuda a variar suas senhas na internet. Com isso, é mais difícil que pessoas indesejadas acessem suas contas. Esse app está disponível gratuitamente na Play Store",
-  "stock": "Stock Trader foi minha primeira grande aplicação desenvolvida com VueJS, com o uso de diversas ferramentas como Vuex, router, e Vue Toasted. Além disso, esse projeto tem conexão com um backend em Firebase, que permite salvar ou carregar as suas ações compradas."
+  "stock": "Stock Trader foi minha primeira grande aplicação desenvolvida com VueJS, com o uso de diversas ferramentas como Vuex, router, e Vue Toasted. Além disso, esse projeto tem conexão com um backend em Firebase, que permite salvar ou carregar as suas ações compradas.",
+  "email_toast": "✉️ lucaszawadneak@gmail.com"
+
 }

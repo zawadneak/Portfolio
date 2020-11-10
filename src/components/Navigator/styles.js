@@ -87,7 +87,7 @@ export const NavButton = styled.div`
 `;
 
 export const AbsoluteBox = styled.div`
-  height: 110px;
+  height: 250px;
   width: 220px;
   align-items: center
   background-color: green;
@@ -134,4 +134,6 @@ export const AbsoluteBox = styled.div`
       color: #fff;
     }
   }
+
+
 `;

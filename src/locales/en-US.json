@@ -26,5 +26,6 @@
   "backend": "Backend code",
   "mobile": "Mobile code",
   "webPage": "Web page",
-  "stock": "Stock Trader was my first big application developed with VueJS, and some other tools such as vuex, routers, vue toasted. Also, this app has a backend connection with a Firebase server, where you can load or store the stocks you registered."
+  "stock": "Stock Trader was my first big application developed with VueJS, and some other tools such as vuex, routers, vue toasted. Also, this app has a backend connection with a Firebase server, where you can load or store the stocks you registered.",
+  "email_toast": "✉️ lucaszawadneak@gmail.com"
 }

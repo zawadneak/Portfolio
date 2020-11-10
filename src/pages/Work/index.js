@@ -40,6 +40,13 @@ export default function Work() {
               alt="Prints"
               id="maruska"
             />
+            <a
+              href="https://github.com/lucaszawadneak/maruska"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('seeCode')} />
+            </a>
           </div>
         </BoxHolder>
         <BoxHolder>

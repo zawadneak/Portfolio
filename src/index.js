@@ -5,6 +5,8 @@ import GlobalStyle from '~/styles/global';
 
 import Translation from './locales/index';
 
+require('dotenv').config();
+
 Translation();
 
 ReactDOM.render(

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Router } from 'react-router-dom';
 import { wrapHistory } from 'oaf-react-router';
 import Navigator from '~/components/Navigator';
@@ -7,8 +8,10 @@ import Routes from './Routes';
 
 import history from '~/services/history';
 
-wrapHistory(history);
+ReactGA.initialize(process.env.REACT_APP_GA_KEY);
+ReactGA.pageview(window.location.pathname);
 
+wrapHistory(history);
 const App = () => {
   return (
     <>
