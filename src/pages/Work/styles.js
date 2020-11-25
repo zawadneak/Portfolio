@@ -51,7 +51,6 @@ export const BoxHolder = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
     p {
       margin: 10px 0px;
       color: #fff;
@@ -62,6 +61,7 @@ export const BoxHolder = styled.div`
       border-radius: 4px;
       max-height: 400px;
       max-width: 400px;
+      margin-left: 20px;
     }
   }
 
