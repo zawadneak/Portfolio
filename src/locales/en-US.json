@@ -19,7 +19,7 @@
   "maruska": "A pet management app that helps the user to accommodate a pet in his life. Maruska was built in React Native and it's currently available on Android at Google Play Store. This is a project that I intend to keep moving forward, and to which, I have a lot of ideas yet to bet developed!",
   "covid": "A webpage built in ReactJS and Typescript to compare COVID-19 with other diseases. The objective here is to spread the idea that the coronavirus isn't just another simple flu. People need to stay at home, wear a mask, and wash their hands regularly.",
   "fastfeet": "A project developed at GoStack Bootcamp built in React, React Native and NodeJS. This is an application for an imaginary delivery company. The web version is for the administrator of the company to schedule deliveries, register recipients, delivery providers and manage the problems that can happen during the delivery period. The mobile version is meant to be used by the providers. There, they can access the delivery information and register problems. Those two applications are connected to a NodeJS backend, that processes and distributes the data!",
-  "github": "This app is a GitHub user collector, that shows the libraries that the user gave a star!",
+  "github": "This app is a GitHub user collector that was developed with the objective of studying Vue 3 new functionalities, such as Composition API, and also as a deeper practice for Typescript. A link to the project page is available below!",
   "monster-hunt": "My first app developed with VueJS. This mini-game was built using pure HTML/CSS and the vue script. I inserted this small project on my portfolio because it is one of the ones I had most fun developing!",
   "seeCode": "See the code",
   "frontend": "Frontend code",

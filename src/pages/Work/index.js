@@ -118,6 +118,37 @@ export default function Work() {
         <BoxHolder>
           <div>
             <img
+              src={require('~/assets/img/ghlogo.png')}
+              alt="Github"
+              id="title"
+            />
+            <p>{intl.get('github')}</p>
+            <a
+              href="https://github.com/lucaszawadneak/github-vue3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('seeCode')} />
+            </a>
+            <a
+              href="https://lucaszawadneak.github.io/github-vue3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title={intl.get('webPage')} />
+            </a>
+          </div>
+          <div>
+            <img
+              src={require('~/assets/img/github.png')}
+              alt="Prints"
+              id="covid"
+            />
+          </div>
+        </BoxHolder>
+        <BoxHolder>
+          <div>
+            <img
               src={require('~/assets/img/fastfeet.png')}
               alt="Fastfeet"
               id="title"
