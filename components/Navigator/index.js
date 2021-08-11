@@ -8,7 +8,7 @@ export default function Navigator() {
 
   return (
     <nav className="flex flex-col items-center justify-center w-full pt-10">
-      <div className="flex w-full max-w-6xl px-20 items-center justify-end">
+      <div className="flex w-full max-w-6xl px-20 items-center justify-center lg:justify-end">
         {router.pathname !== '/' ? (
           <Link href="/">
             <a className="animate-pulse transition duration-300 mr-4">

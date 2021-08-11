@@ -13,19 +13,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center max-w-6xl w-full flex-1 px-20 text-center">
-        <div className="flex mt-32 w-full items-center">
-          <div className="flex flex-col items-start w-2/3">
+      <main className="flex flex-col items-center justify-center max-w-6xl w-full flex-1 p-5 lg:px-20 text-center">
+        <div className="flex flex-col lg:flex-row mt-32 w-full items-center">
+          <div className="flex flex-col lg:items-start w-full  lg:p-0">
             <h1 className="font-bold text-4xl">Hello there! I'm Lucas.</h1>
             <h1 className="font-bold text-4xl mt-2">Fullstack Developer</h1>
-            <p className="mt-8 text-left text-justify mr-20">{description}</p>
+            <p className="mt-8 text-left text-justify lg:mr-20">{description}</p>
             <button className="bg-red-400 p-3 shadow-lg
-              rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 ">
+              rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 mb-10 lg:mb-0">
               Download Resume
             </button>
           </div>
           <Image src={ProfilePicture} alt="me"
-            width={350} height={350}
+            width={300} height={300}
             className="rounded-full object-cover shadow-lg" />
         </div>
 
