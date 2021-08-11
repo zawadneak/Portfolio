@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import ProfilePicture from '../public/profile.jpg'
-import { IoBookOutline, IoLogoAngular, IoLogoDocker, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoSettingsOutline, IoStarOutline } from 'react-icons/io5'
+import { IoBookOutline, IoLogoAngular, IoLogoCss3, IoLogoDocker, IoLogoFigma, IoLogoHtml5, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoSettingsOutline, IoStarOutline } from 'react-icons/io5'
 
 const description = "I’m 20 years old and live in Curitiba, Brazil. My main goal as a developer is to build applications that can help people the best way possible. That's why I hope in the future to be a part of great projects!"
 
@@ -36,33 +36,26 @@ export default function Home() {
           </span>
         </div> */}
         <div className="flex flex-wrap w-full items-center justify-evenly mt-32">
-          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer" >
+          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer"
+            href="https://reactjs.org/" >
             <IoLogoReact size={120} color="darkblue" />
           </a>
-          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer"
+            href="https://nodejs.org">
             <IoLogoNodejs size={120} color="green" />
           </a>
-          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer"
+            href="https://angular.io/">
             <IoLogoAngular size={120} color="darkred" />
           </a>
-          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer">
+          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer"
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
             <IoLogoJavascript size={120} color="gold" />
           </a>
-          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer">
-            <IoLogoDocker size={120} color="blue" />
+          <a className="cursor-pointer hover:opacity-50 transition duration-300" target="_blank" rel="noopener noreferrer"
+            href="https://figma.com">
+            <IoLogoFigma size={120} color="blue" />
           </a>
-        </div>
-
-
-        <div className="w-full mt-32">
-          <span className="flex items-center mb-1">
-            <IoStarOutline size={25} />
-            <h3 className="text-lg text-left ml-1">Featured works</h3>
-          </span>
-        </div>
-        <div className="flex w-full bg-gray-100  p-10 rounded shadow-lg">
-          <div className="flex flex-col items-start mr-72">
-          </div>
         </div>
 
         <div className="w-full mt-32">
