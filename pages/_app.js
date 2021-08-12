@@ -1,14 +1,14 @@
 import 'tailwindcss/tailwind.css';
-import './styles/animation.css'
-import Footer from '../components/Footer'
 import Navigator from '../components/Navigator'
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navigator />
-      <Component {...pageProps} />
-      <Footer />
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </>
   )
 }
