@@ -2,9 +2,15 @@ import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoStackoverflow, IoL
 
 export default function Footer({ absolute }) {
 
+  let containerStyle = "flex flex-col items-center justify-center w-full p-10"
+
+  if (absolute) {
+    containerStyle = "flex flex-col items-center justify-center w-full p-10 absolute bottom-0"
+  }
+
   return (
 
-    <footer className={"flex flex-col items-center justify-center w-full p-10"}>
+    <footer className={containerStyle}>
       <div className="m-2 flex">
         <a className="mr-4 cursor-pointer" href="https://twitter.com/lucascassilha">
           <IoLogoTwitter size={25} />

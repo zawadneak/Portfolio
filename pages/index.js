@@ -25,7 +25,7 @@ export default function Home() {
             <div className="flex flex-col lg:items-start w-full  lg:p-0">
               <h1 className="font-bold text-5xl">Hello there! I'm Lucas.</h1>
               <h1 className="font-bold text-5xl mt-2">Fullstack Developer</h1>
-              <p className="mt-8 text-left text-justify lg:mr-20">{description}</p>
+              <p className="mt-8 text-justify lg:mr-20">{description}</p>
               <button className="bg-red-400 p-3 shadow-lg
               rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 mb-10 lg:mb-0">
                 Download Resume

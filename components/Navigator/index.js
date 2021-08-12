@@ -12,11 +12,13 @@ export default function Navigator() {
     <nav className="flex flex-col items-center justify-center w-full pt-10">
       <div className="flex w-full max-w-6xl px-20 items-center justify-center lg:justify-end">
         <Link href="/">
-          <motion.a className="mr-4" animate={{
-            opacity: router.pathname !== '/' ? 1 : 0,
-            display: router.pathname !== '/' ? 'flex' : 'hidden',
-            cursor: router.pathname !== '/' ? 'pointer' : 'default'
-          }}>
+          <motion.a className="mr-4"
+            transition={{ ease: "anticipate", duration: 0.3 }}
+            animate={{
+              opacity: router.pathname !== '/' ? 1 : 0,
+              display: router.pathname !== '/' ? 'flex' : 'hidden',
+              cursor: router.pathname !== '/' ? 'pointer' : 'default'
+            }}>
             <IoHomeOutline size={25} />
           </motion.a>
         </Link>
