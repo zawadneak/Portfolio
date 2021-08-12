@@ -13,7 +13,7 @@ export default function Navigator() {
       <div className="flex w-full max-w-6xl px-20 items-center justify-center lg:justify-end">
         <Link href="/">
           <motion.a className="mr-4"
-            transition={{ ease: "anticipate", duration: 0.3 }}
+            transition={{ ease: "anticipate", duration: 1 }}
             animate={{
               opacity: router.pathname !== '/' ? 1 : 0,
               display: router.pathname !== '/' ? 'flex' : 'hidden',
@@ -22,9 +22,9 @@ export default function Navigator() {
             <IoHomeOutline size={25} />
           </motion.a>
         </Link>
-        <Link href="/work">
+        <Link href="/education">
           <a className="mr-4 cursor-pointer font-semibold">
-            Work
+            Education
           </a>
         </Link>
         <Link href="/projects">
