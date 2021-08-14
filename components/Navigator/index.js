@@ -24,17 +24,17 @@ export default function Navigator() {
         </Link>
         <Link href="/education">
           <a className="mr-4 cursor-pointer font-semibold">
-            Education
+            Educação
           </a>
         </Link>
         <Link href="/projects">
           <a className="mr-4 cursor-pointer font-semibold">
-            Projects
+            Projetos
           </a>
         </Link>
         <Link href="/contact">
           <a className=" cursor-pointer flex font-semibold">
-            Contact
+            Contato
           </a>
         </Link>
       </div>
