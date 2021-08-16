@@ -15,7 +15,7 @@ export default function Projects() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center  max-w-6xl w-full">
+        <main className="flex flex-col items-center justify-center flex-1 px-5 lg:px-20 text-center  max-w-6xl w-full">
           {projects.map((item, index) => (
             <Project {...item} index={index} />
           ))}

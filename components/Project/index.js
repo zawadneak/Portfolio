@@ -13,9 +13,9 @@ export default function Project({ image, title, description, year, tech, github,
       initial="hidden"
       animate="show"
       transition={{ type: "tween", delay: index * 0.3 }}
-      className="w-full my-5 grid grid-cols-4 items-center">
-      <img src={image} class="h-40 rounded w-56 object-cover shadow-md col-span-1" />
-      <div className="flex flex-col items-start col-span-3">
+      className="w-full my-5 grid lg:grid-cols-4 items-center">
+      <img src={image} className="h-40 rounded w-56 object-cover shadow-md lg:col-span-1" />
+      <div className="flex flex-col items-start lg:col-span-3 text-center">
         <span className="flex items-center">
           <h1 className="font-bold text-3xl mr-2">{title}</h1>
           <a href={github} class="cursor-pointer mr-1">
