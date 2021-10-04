@@ -27,7 +27,7 @@ export default function Home() {
               <p className="mt-8 text-justify lg:mr-20">{description}</p>
               <a className="bg-red-400 p-3 shadow-lg cursor-pointer
               rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 mb-10 lg:mb-0"
-                href="https://drive.google.com/file/d/1x1mI0i6sUPPm2e-V2L5MO7Q64euxXPjN/view"
+                href="https://drive.google.com/file/d/17QNfZpxvPrBpDD5gKGB2ki-1rRnGjWdO/view?usp=sharing"
                 rel="noopener noreferrer"
                 target="_blank"
               >

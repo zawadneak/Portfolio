@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Krypt",
+    "tech": "React Native | NodeJS | ReactJS",
+    "year": "2021 -",
+    "description": "Uma plataforma de avaliação e discussão de jogos. Desenvolvida por mim utilizando NodeJS (Express + PostgreSQL + Sequelize), ReactJS e React Native. Esse projeto ainda está ativo e em constante manutenção e desenvolvimento. O código do projeto é privado :)",
+    "image": "https://raw.githubusercontent.com/thekrypt/politicas-de-privacidade/main/banner.png",
+    "web": "https://thekrypt.com.br/",
+    "github": "https://github.com/thekrypt"
+  },
+  {
     "title": "Maruska",
     "tech": "React Native",
     "year": "2019",
