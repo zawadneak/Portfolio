@@ -27,7 +27,7 @@ export default function Home() {
               <p className="mt-8 text-justify lg:mr-20">{description}</p>
               <a className="bg-red-400 p-3 shadow-lg cursor-pointer
               rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 mb-10 lg:mb-0"
-                href="https://drive.google.com/file/d/17QNfZpxvPrBpDD5gKGB2ki-1rRnGjWdO/view?usp=sharing"
+                href="https://drive.google.com/file/d/1OshOzscwmOYLIytirLNQ_h8rHUt45YRj/view?usp=sharing"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -76,7 +76,7 @@ export default function Home() {
               <h3 className="font-bold text-xl">Estagiário de Desenvolvimento</h3>
               <p className="text-sm">Tunts</p>
               <p className="text-sm mb-3">Angular | Spring | Android | NodeJS | PostgreSQL</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">2021 - </label>
+              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">2021</label>
             </div>
           </a>
           <a className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-2
