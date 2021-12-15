@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import ProfilePicture from '../public/profile.jpg'
-import UfprLogo from '../public/ufpr.jpg'
-import TuntsLogo from '../public/tunts.png'
 import { IoBookOutline, IoLogoAngular, IoLogoFigma, IoLogoJavascript, IoLogoNodejs, IoLogoReact } from 'react-icons/io5'
 import PageLayout from '../components/PageLayout'
 import Footer from '../components/Footer'
+import Work from './work'
 
 const description = "Tenho 20 anos e moro em Curitiba. Desenvolvo aplicações front, back e mobile em Javascript e Typescript (ocasionalmente Dart e Java). Programo desde os meus 16 e me apaixonei pelo desenvolvimento fullstack, onde posso criar coisas que amo e fazer a diferença! Meu principal objetivo como desenvolvedor é construir produtos que ajudem as pessoas o melhor possível. Por isso estou sempre disposto a fazer parte de grandes projetos!"
 
@@ -62,40 +61,7 @@ export default function Home() {
               <IoLogoFigma size={120} color="blue" />
             </a>
           </div>
-
-          <a className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-32
-          lg:divide-x lg:divide-gray-300"
-            href="https://tunts.com/"
-            target="_blank" rel="noopener noreferrer"
-          >
-            <Image src={TuntsLogo} alt="tunts"
-              width={120} height={120}
-              objectFit="cover"
-              className="rounded" />
-            <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-              <h3 className="font-bold text-xl">Estagiário de Desenvolvimento</h3>
-              <p className="text-sm">Tunts</p>
-              <p className="text-sm mb-3">Angular | Spring | Android | NodeJS | PostgreSQL</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">2021</label>
-            </div>
-          </a>
-          <a className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-2
-          lg:divide-x lg:divide-gray-300"
-
-            href="https://www.ufpr.br/portalufpr/"
-            target="_blank" rel="noopener noreferrer"
-          >
-            <Image src={UfprLogo} alt="ufpr"
-              width={120} height={120}
-              objectFit="cover"
-              className="rounded" />
-            <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-              <h3 className="font-bold text-xl" >Desenvolvedor Backend & Mobile</h3>
-              <p className="text-sm">Sistema Lojinha UFPR - Projeto de Extensão</p>
-              <p className="text-sm mb-3">React Native | NodeJS | MongoDB</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">2020</label>
-            </div>
-          </a>
+          <Work/>
         </main>
         <Footer />
       </div>
