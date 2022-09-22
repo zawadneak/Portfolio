@@ -4,9 +4,22 @@ import Image from "next/image";
 
 import UfprLogo from "../../public/ufpr.jpg";
 import TuntsLogo from "../../public/tunts.png";
-import RD2Logo from '../../public/rd2.png'
+import RD2Logo from "../../public/rd2.png";
+import { useTranslation } from "react-i18next";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
 
 export default function Work() {
+  const { t } = useTranslation();
+
   return (
     <>
       <a
@@ -25,11 +38,9 @@ export default function Work() {
           className="rounded"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-          <h3 className="font-bold text-xl">Estagiário Tech</h3>
+          <h3 className="font-bold text-xl">{t("development-intern")}</h3>
           <p className="text-sm">RD2 Ventures</p>
-          <p className="text-sm mb-3">
-            ReactJS | Django
-          </p>
+          <p className="text-sm mb-3">ReactJS | Django</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
             2021 -
           </label>
@@ -51,7 +62,7 @@ export default function Work() {
           className="rounded"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-          <h3 className="font-bold text-xl">Estagiário de Desenvolvimento</h3>
+          <h3 className="font-bold text-xl">{t("development-intern")}</h3>
           <p className="text-sm">Tunts</p>
           <p className="text-sm mb-3">
             Angular | Spring | Android | NodeJS | PostgreSQL
@@ -77,7 +88,7 @@ export default function Work() {
           className="rounded"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-          <h3 className="font-bold text-xl">Desenvolvedor Backend & Mobile</h3>
+          <h3 className="font-bold text-xl">{t("backend-developer")}</h3>
           <p className="text-sm">Sistema Lojinha UFPR - Projeto de Extensão</p>
           <p className="text-sm mb-3">React Native | NodeJS | MongoDB</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">

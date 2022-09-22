@@ -1,22 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Footer from '../../components/Footer'
-import PageLayout from '../../components/PageLayout'
+import Head from "next/head";
+import Image from "next/image";
+import Footer from "../../components/Footer";
+import PageLayout from "../../components/PageLayout";
 
-import UfprLogo from '../../public/ufpr.jpg'
-import RocketseatLogo from '../../public/rocketseat.jpeg'
-import UdemyLogo from '../../public/udemy.png'
-import { motion } from 'framer-motion'
+import UfprLogo from "../../public/ufpr.jpg";
+import RocketseatLogo from "../../public/rocketseat.jpeg";
+import UdemyLogo from "../../public/udemy.png";
+import { motion } from "framer-motion";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
 export default function Education() {
   const variants = {
     hidden: { opacity: 0, x: -50 },
-    show: { opacity: 1, x: 0 }
-  }
+    show: { opacity: 1, x: 0 },
+  };
 
   return (
     <PageLayout>
-
       <div className="flex flex-col items-center justify-center py-2">
         <Head>
           <title>Education | Lucas Zawadneak</title>
@@ -32,17 +40,30 @@ export default function Education() {
             className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-5
           lg:divide-x lg:divide-gray-300"
             href="https://www.ufpr.br/portalufpr/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image src={UfprLogo} alt="ufpr"
-              width={120} height={120}
+            <Image
+              src={UfprLogo}
+              alt="ufpr"
+              width={120}
+              height={120}
               objectFit="cover"
-              className="rounded" />
+              className="rounded"
+            />
             <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-              <h3 className="font-bold text-xl" >Universidade Federal do Paraná</h3>
-              <p className="text-sm">Engenharia de Bioprocessos e Biotecnologia (2019)</p>
-              <p className="text-sm mb-3">Tecnologia em Análise e Desenvolvimento de Sistemas (2020 - )</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">2019 - </label>
+              <h3 className="font-bold text-xl">
+                Universidade Federal do Paraná
+              </h3>
+              <p className="text-sm">
+                Engenharia de Bioprocessos e Biotecnologia (2019)
+              </p>
+              <p className="text-sm mb-3">
+                Tecnologia em Análise e Desenvolvimento de Sistemas (2020 - )
+              </p>
+              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
+                2019 -{" "}
+              </label>
             </div>
           </motion.a>
           <motion.a
@@ -53,16 +74,23 @@ export default function Education() {
             className="flex  flex-col lg:flex-row items-center bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer
           lg:divide-x lg:divide-gray-300"
             href="https://rocketseat.com.br/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image src={RocketseatLogo} alt="ufpr"
-              width={120} height={120}
-              className="object-cover rounded" />
+            <Image
+              src={RocketseatLogo}
+              alt="ufpr"
+              width={120}
+              height={120}
+              className="object-cover rounded"
+            />
             <div className="flex flex-col  items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-              <h3 className="font-bold text-xl" >Rocketseat GoStack</h3>
+              <h3 className="font-bold text-xl">Rocketseat GoStack</h3>
               <p className="text-sm">ReactJS | React Native | NodeJS</p>
               <p className="text-sm mb-3">Bootcamp</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-12">2018</label>
+              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-12">
+                2018
+              </label>
             </div>
           </motion.a>
           <motion.a
@@ -73,21 +101,24 @@ export default function Education() {
             className="flex  flex-col lg:flex-row items-center bg-gray-100 p-5 rounded shadow-md w-full cursor-pointer
             lg:divide-x lg:divide-gray-300"
             href="https://www.udemy.com/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image src={UdemyLogo} alt="ufpr"
-              width={120} height={120}
-              className="object-cover rounded" />
+            <Image
+              src={UdemyLogo}
+              alt="ufpr"
+              width={120}
+              height={120}
+              className="object-cover rounded"
+            />
             <div className="flex flex-col  items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-              <h3 className="font-bold text-xl" >Udemy</h3>
+              <h3 className="font-bold text-xl">Udemy</h3>
               <p className="text-sm">Angular | Android | Vue | Flutter</p>
-              <p className="text-sm mb-3">Diversos cursos</p>
-              <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-24">2018 - 2021</label>
             </div>
           </motion.a>
         </main>
         <Footer />
       </div>
     </PageLayout>
-  )
+  );
 }

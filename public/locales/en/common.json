@@ -1,0 +1,31 @@
+{
+  "fullstack-developer.label": "Fullstack Developer",
+  "description": "I am 21 years old and I live in Curitiba. I develop front, back and mobile applications in Javascript and Typescript (occasionally Dart and Java). I've been programming since I was 16 and I fell in love with fullstack development, where I can create things I love and make a difference! My main goal as a developer is to build products that help people the best they can. That's why I'm always willing to be part of big projects!",
+  "talk-to-me.label": "Talk to me!",
+  "try-my-email": "You can try contacting me by my email",
+  "other-social-media": "Or by any other social media down below!",
+  "download-cv": {
+    "label": "Download CV"
+  },
+  "hello-there": "Hello there! I'm Lucas",
+  "projects": {
+    "label": "Projects",
+    "the-krypt": {
+      "description": "A game review and discussion platform. Developed by me using NodeJS (Express + PostgreSQL + Sequelize), ReactJS and React Native. This project is still active and under constant maintenance and development. Project is currently paused, but will return development soon!"
+    },
+    "maruska": {
+      "description": "A pet management app that helps accommodate one in the user's life. Maruska is built on React Native and is available on Android devices from the Google Play Store. This is a project that I intend to continue developing over time."
+    },
+    "password": {
+      "description": "My first app developed with Flutter. PASSWORD is a password generator and vault that helps you change your passwords on the internet. This makes it more difficult for unwanted people to access your accounts."
+    },
+    "monster-hunt": {
+      "description": "My first app built in VueJS. This mini-game was developed with pure HTML/CSS, and with vue script. I decided to add this little project to my portfolio, since it was one of the ones I had the most fun while developing it!"
+    }
+  },
+  "education": "Education",
+  "contact": "Contact",
+  "development-intern": "Development Intern",
+  "backend-developer": "Backend & Mobile Developer",
+  "soon": "Soon"
+}
