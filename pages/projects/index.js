@@ -1,10 +1,10 @@
 import { t } from "i18next";
 import Head from "next/head";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Footer from "../../components/Footer";
 import PageLayout from "../../components/PageLayout";
 import Project from "../../components/Project";
-import useProjects from "./useProjects";
+import useProjects from "../../hooks/useProjects";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 

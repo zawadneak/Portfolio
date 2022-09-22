@@ -4,7 +4,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { SiLighthouse } from "react-icons/si";
 import { GiUsaFlag } from "react-icons/gi";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
 import UsaFlag from "../../public/usa.png";

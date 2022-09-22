@@ -5,7 +5,7 @@ import Image from "next/image";
 import UfprLogo from "../../public/ufpr.jpg";
 import TuntsLogo from "../../public/tunts.png";
 import RD2Logo from "../../public/rd2.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 

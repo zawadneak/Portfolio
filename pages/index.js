@@ -12,7 +12,7 @@ import {
 import PageLayout from "../components/PageLayout";
 import Footer from "../components/Footer";
 import Work from "./work";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export async function getStaticProps({ locale }) {
