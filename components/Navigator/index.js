@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { IoHomeOutline } from "react-icons/io5";
-import { SiLighthouse } from "react-icons/si";
-import { GiUsaFlag } from "react-icons/gi";
+import { IoHomeOutline, IoLeafOutline } from "react-icons/io5";
+
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
@@ -55,7 +54,7 @@ export default function Navigator() {
           <a className=" cursor-pointer flex font-semibold">{t("contact")}</a>
         </Link>
         <span className="ml-4 opacity-50 flex font-semibold cursor-pointer">
-          <SiLighthouse size={20} className="mr-1" />
+          <IoLeafOutline size={20} className="mr-1" />
         </span>
         <button onClick={handleChangeLanguage} className="ml-4 mt-2">
           {language === "en" ? (
