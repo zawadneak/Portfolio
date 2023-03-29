@@ -47,7 +47,7 @@ export default function Work() {
         </div>
       </a>
       <a
-        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-32
+        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer
         lg:divide-x lg:divide-gray-300"
         href="https://rd2.ventures/"
         target="_blank"
@@ -65,7 +65,7 @@ export default function Work() {
           <h3 className="font-bold text-xl">{t("development-intern")}</h3>
           <p className="text-sm">RD2 Ventures | deskMy</p>
           <p className="text-sm mb-3">ReactJS | Django</p>
-          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto">
             2021 - 2023
           </label>
         </div>
