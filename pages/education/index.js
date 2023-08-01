@@ -59,10 +59,10 @@ export default function Education() {
                 Engenharia de Bioprocessos e Biotecnologia (2019)
               </p>
               <p className="text-sm mb-3">
-                Tecnologia em Análise e Desenvolvimento de Sistemas (2020 - )
+                Tecnologia em Análise e Desenvolvimento de Sistemas (2020 - 2023)
               </p>
               <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
-                2019 -{" "}
+                2019 - 2023
               </label>
             </div>
           </motion.a>
