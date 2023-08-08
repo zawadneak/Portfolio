@@ -43,7 +43,7 @@ export default function Home() {
                 {t("fullstack-developer.label")}
               </h1>
               <p className="mt-8 text-justify lg:mr-20">{description}</p>
-              <a
+              {/* <a
                 className="bg-red-400 p-3 shadow-lg cursor-pointer
               rounded text-white font-bold mt-4 hover:opacity-70 transition duration-300 mb-10 lg:mb-0"
                 href="https://drive.google.com/file/d/1OshOzscwmOYLIytirLNQ_h8rHUt45YRj/view?usp=sharing"
@@ -51,7 +51,7 @@ export default function Home() {
                 target="_blank"
               >
                 {t("download-cv.label")}
-              </a>
+              </a> */}
             </div>
             <Image
               src={ProfilePicture}

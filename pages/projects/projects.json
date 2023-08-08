@@ -2,10 +2,9 @@
   {
     "title": "The Krypt",
     "tech": "React Native | NodeJS | ReactJS",
-    "year": "2021 -",
-    "description": "Uma plataforma de avaliação e discussão de jogos. Desenvolvida por mim utilizando NodeJS (Express + PostgreSQL + Sequelize), ReactJS e React Native. Esse projeto ainda está ativo e em constante manutenção e desenvolvimento. O código do projeto é privado :)",
+    "year": "2021 - 2022",
+    "description": "Uma plataforma de avaliação e discussão de jogos. Desenvolvida por mim utilizando NodeJS (Express + PostgreSQL + Sequelize), ReactJS e React Native. O código do projeto é privado :)",
     "image": "https://raw.githubusercontent.com/thekrypt/politicas-de-privacidade/main/banner.png",
-    "web": "https://thekrypt.com.br/",
     "github": "https://github.com/thekrypt"
   },
   {
@@ -31,14 +30,5 @@
     "description": "Projeto desenvolvido no Bootcamp Gostack usando React, React Native e NodeJS. Essa aplicação seria para uma empresa de entregas imaginária. A versão web é para o administrador da empresa agendar entregas, registrar entregadores, destinatários e lidar com quaisquer problemas que ocorram com as entregas. A versão mobile é destinada para os entregadores. Nela, eles conseguem acessar as informações do destinatário e informar problemas. Essas duas aplicações são conectadas por um servidor em NodeJS que processa e distribui as informações.",
     "image": "https://camo.githubusercontent.com/43b9abd1b3579fb762476d91eb7a7eeb5a91973968053abd0664fd7cacde22a9/687474703a2f2f692e696d6775722e636f6d2f5a3467696433502e706e67",
     "github": "https://github.com/lucaszawadneak/fastfeet"
-  },
-  {
-    "title": "Monster Hunt",
-    "tech": "VueJS",
-    "year": "2020",
-    "description": "Meu primeiro aplicativo construído em VueJS. Esse mini-game foi desenvolvido com HTML/CSS puro, e com o vue script. Resolvi adicionar esse pequeno projeto no meu portfólio, uma vez que foi um dos que eu mais me diverti enquanto o desenvolvia!",
-    "image": "https://nimbus-screenshots.s3.amazonaws.com/s/1b17c3ee1528d585b1726dfb1f77f10e.png",
-    "github": "https://github.com/lucaszawadneak/monster-hunt",
-    "web": "https://lucaszawadneak.github.io/monster-hunt/"
   }
 ]
