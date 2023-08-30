@@ -41,8 +41,8 @@ export default function Work() {
           <h3 className="font-bold text-xl">{t("fullstack-developer")}</h3>
           <p className="text-sm">deskmy</p>
           <p className="text-sm mb-3">ReactJS | Django</p>
-          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
-            2023
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
+            2023 -
           </label>
         </div>
       </a>
@@ -65,7 +65,7 @@ export default function Work() {
           <h3 className="font-bold text-xl">{t("development-intern")}</h3>
           <p className="text-sm">deskmy</p>
           <p className="text-sm mb-3">ReactJS | Django</p>
-          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto">
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
             2021 - 2023
           </label>
         </div>

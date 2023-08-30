@@ -53,9 +53,14 @@ export default function Navigator() {
         <Link href="/contact">
           <a className=" cursor-pointer flex font-semibold">{t("contact")}</a>
         </Link>
-        <span className="ml-4 opacity-50 flex font-semibold cursor-pointer">
-          <IoLeafOutline size={20} className="mr-1" />
-        </span>
+        <a
+          href="https://curistudios.com"
+          className="ml-4  cursor-pointer font-semibold"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          curi
+        </a>
         <button onClick={handleChangeLanguage} className="ml-4 mt-2">
           {language === "en" ? (
             <Image src={UsaFlag} width={25} height={25} />

@@ -11,7 +11,7 @@
   "projects": {
     "label": "Projects",
     "the-krypt": {
-      "description": "A game review and discussion platform. Developed by me using NodeJS (Express + PostgreSQL + Sequelize), ReactJS and React Native. This project is still active and under constant maintenance and development. Project is currently paused, but will return development soon!"
+      "description": "A game review and discussion platform. Developed by me using NodeJS (Express + PostgreSQL + Sequelize), ReactJS and React Native. Project is currently paused, but will return development soon!"
     },
     "maruska": {
       "description": "A pet management app that helps accommodate one in the user's life. Maruska is built on React Native and is available on Android devices from the Google Play Store. This is a project that I intend to continue developing over time."
@@ -21,6 +21,9 @@
     },
     "monster-hunt": {
       "description": "My first app built in VueJS. This mini-game was developed with pure HTML/CSS, and with vue script. I decided to add this little project to my portfolio, since it was one of the ones I had the most fun while developing it!"
+    },
+    "just-poker":{
+      "description":"An offline poker game. Focused on simplicity and unique features, such as tournaments and career mode (coming soon!). Part of the curistudios project."
     }
   },
   "education": "Education",

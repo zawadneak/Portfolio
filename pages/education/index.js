@@ -62,7 +62,7 @@ export default function Education() {
                 Tecnologia em Análise e Desenvolvimento de Sistemas (2020 -
                 2023)
               </p>
-              <label className="bg-blue-900 rounded p-1 px-3 text-white font-bold text-sm w-14">
+              <label className="bg-blue-900 rounded p-1 px-3 text-white font-bold text-sm w-auto">
                 2019 - 2023
               </label>
             </div>
