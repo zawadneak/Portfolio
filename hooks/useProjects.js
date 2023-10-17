@@ -5,6 +5,15 @@ export default function useProjects() {
 
   const projects = [
     {
+      title: "the collection",
+      tech: "Astro | React | Golang",
+      year: "2023",
+      description: t("projects.the-collection.description"),
+      image:
+        "https://nyuxmbuskvnmblumetwr.supabase.co/storage/v1/object/public/collection-bucket/branding/logo-min.png",
+      web: "https://thecollection.curistudios.com/",
+    },
+    {
       title: "JustPoker",
       tech: "React | Supabase",
       year: "2023",
@@ -12,15 +21,15 @@ export default function useProjects() {
       image: "https://curistudios.com/_astro/just-poker_Uurmh.avif",
       web: "https://justpoker.curistudios.com/",
     },
-    {
-      title: "The Krypt",
-      tech: "React Native | NodeJS | ReactJS",
-      year: "2021",
-      description: t("projects.the-krypt.description"),
-      image:
-        "https://raw.githubusercontent.com/thekrypt/politicas-de-privacidade/main/banner.png",
-      github: "https://github.com/thekrypt",
-    },
+    // {
+    //   title: "The Krypt",
+    //   tech: "React Native | NodeJS | ReactJS",
+    //   year: "2021",
+    //   description: t("projects.the-krypt.description"),
+    //   image:
+    //     "https://raw.githubusercontent.com/thekrypt/politicas-de-privacidade/main/banner.png",
+    //   github: "https://github.com/thekrypt",
+    // },
     {
       title: "Maruska",
       tech: "React Native",
