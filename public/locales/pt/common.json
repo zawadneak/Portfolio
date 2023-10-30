@@ -1,6 +1,6 @@
 {
   "fullstack-developer.label": "Desenvolvedor Fullstack",
-  "description": "Sou um desenvolvedor de software apaixonado por tecnologia e inovação, com experiência em diversas stacks e linguagens de programação, incluindo React, React Native, Node, Java, Python, C++ e C#. Com apenas 21 anos, já trabalhei em diversos projetos desafiadores que me permitiram aprimorar minhas habilidades técnicas e de liderança.\n Atualmente, trabalho na startup SaaS deskMy, onde sou responsável por desenvolver soluções inovadoras para atender às necessidades de nossos clientes. Meu foco é sempre aprimorar a experiência do usuário, buscando novas formas de tornar nossos produtos mais intuitivos, eficientes e acessíveis.\n Sou uma pessoa proativa e criativa, que busca sempre estar atualizado com as últimas tendências e novidades do mercado de tecnologia. Estou sempre em busca de desafios e oportunidades de aprendizado, que me permitam crescer profissional e pessoalmente.",
+  "description": "Bem-vindo ao meu portfólio! Com 22 anos e baseado em Curitiba, tenho experiência em criar aplicações em todas as camadas – desde o front-end até o back-end e mobile. Minha jornada na programação começou aos 16 anos e desde então fui cativado pelo mundo do desenvolvimento fullstack. Minha paixão está em criar produtos que tenham um impacto positivo na vida das pessoas. Estou sempre animado para me envolver em projetos significativos. Vamos conectar e colaborar!",
   "talk-to-me": {
     "label": "Fale comigo!"
   },
@@ -13,7 +13,7 @@
   "projects": {
     "label": "Projetos",
     "the-krypt": {
-      "description": "Uma plataforma de revisão e discussão de jogos. \nDesenvolvido por mim usando NodeJS (Express PostgreSQL Sequelize), ReactJS e React Native. \nEste projeto ainda está ativo e em constante manutenção e desenvolvimento. \nO projeto está pausado no momento, mas retornará o desenvolvimento em breve!"
+      "description": "Uma plataforma de revisão e discussão de jogos. \nDesenvolvido por mim usando NodeJS (Express PostgreSQL Sequelize), ReactJS e React Native. \nO projeto está pausado no momento, mas retornará o desenvolvimento em breve!"
     },
     "maruska": {
       "description": "Um aplicativo de gerenciamento de animais de estimação que ajuda a acomodar um na vida do usuário. \nMaruska é construído em React Native e está disponível em dispositivos Android na Google Play Store. \nEste é um projeto que pretendo continuar a desenvolver ao longo do tempo."
@@ -23,6 +23,12 @@
     },
     "monster-hunt": {
       "description": "Meu primeiro aplicativo construído em VueJS. \nEste mini-jogo foi desenvolvido com puro HTML/CSS, e com script vue. \nResolvi adicionar este pequeno projeto ao meu portfólio, pois foi um dos que mais me diverti ao desenvolvê-lo!"
+    },
+    "just-poker": {
+      "description": "Um jogo de poker offline. Foco na simplicidade e features únicas, como modos torneio e carreira (em breve!). Parte do projeto curistudios."
+    },
+    "the-collection": {
+      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go. Parte do projeto curistudios."
     }
   },
   "education": "Educação",
