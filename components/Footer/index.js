@@ -37,7 +37,7 @@ export default function Footer({ absolute }) {
         </a>
         <a
           className="mr-4 cursor-pointer"
-          href="https://github.com/lucaszawadneak"
+          href="https://github.com/zawadneak"
         >
           <IoLogoGithub size={25} />
         </a>
