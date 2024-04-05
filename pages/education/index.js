@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import PageLayout from "../../components/PageLayout";
 
 import UfprLogo from "../../public/ufpr.jpg";
+import UTFPRLogo from "../../public/utfprlogo.png";
 import RocketseatLogo from "../../public/rocketseat.jpeg";
 import UdemyLogo from "../../public/udemy.png";
 import { motion } from "framer-motion";
@@ -27,7 +28,7 @@ export default function Education() {
     <PageLayout>
       <div className="flex flex-col items-center justify-center py-2">
         <Head>
-          <title>Education | Lucas Zawadneak</title>
+          <title>Educação | Lucas Zawadneak</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -38,6 +39,37 @@ export default function Education() {
             animate="show"
             transition={{ type: "tween", delay: 0 }}
             className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-5
+          lg:divide-x lg:divide-gray-300"
+            href="https://www.ufpr.br/portalufpr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={UTFPRLogo}
+              alt="ufpr"
+              width={120}
+              height={120}
+              objectFit="cover"
+              className="rounded h-32 w-32 object-contain bg-white rounded"
+            />
+            <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
+              <h3 className="font-bold text-xl">
+                Universidade Tecnológica Federal do Paraná
+              </h3>
+              <p className="text-sm mb-3">
+                Pós Graduação em Inteligência Artificial
+              </p>
+              <label className="bg-blue-900 rounded p-1 px-3 text-white font-bold text-sm w-auto">
+                2024 -
+              </label>
+            </div>
+          </motion.a>
+          <motion.a
+            variants={variants}
+            initial="hidden"
+            animate="show"
+            transition={{ type: "tween", delay: 0 }}
+            className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer 
           lg:divide-x lg:divide-gray-300"
             href="https://www.ufpr.br/portalufpr/"
             target="_blank"
