@@ -58,7 +58,7 @@ export default function Home() {
               alt="me"
               width={300}
               height={300}
-              className="rounded-full object-cover shadow-lg bg-gray-300"
+              className="rounded-lg object-cover shadow-lg bg-gray-300"
             />
           </div>
 
