@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import ProfilePicture from "../public/profile.jpg";
+import ProfilePicture from "../public/me.jpg";
 import {
   IoBookOutline,
   IoLogoAngular,
