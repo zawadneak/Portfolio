@@ -2,12 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import ProfilePicture from "../public/me.jpg";
 import {
-  IoBookOutline,
   IoLogoAngular,
-  IoLogoFigma,
   IoLogoJavascript,
   IoLogoNodejs,
   IoLogoReact,
+  IoLogoPython,
 } from "react-icons/io5";
 import PageLayout from "../components/PageLayout";
 import Footer from "../components/Footer";
@@ -99,9 +98,9 @@ export default function Home() {
               className="cursor-pointer hover:opacity-50 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://figma.com"
+              href="#"
             >
-              <IoLogoFigma size={120} color="blue" />
+              <IoLogoPython size={120} color="blue" />
             </a>
           </div>
           <Work />
