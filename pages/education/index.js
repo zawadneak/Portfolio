@@ -40,17 +40,17 @@ export default function Education() {
             transition={{ type: "tween", delay: 0 }}
             className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-5
           lg:divide-x lg:divide-gray-300"
-            href="https://www.ufpr.br/portalufpr/"
+            href="https://www.utfpr.edu.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
               src={UTFPRLogo}
-              alt="ufpr"
+              alt="utfpr"
               width={120}
               height={120}
               objectFit="cover"
-              className="rounded h-32 w-32 object-contain bg-white rounded"
+              className="rounded h-32 w-32 object-contain bg-white "
             />
             <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
               <h3 className="font-bold text-xl">

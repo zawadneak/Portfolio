@@ -97,7 +97,7 @@ export default function Work() {
         </div>
       </a>
       <a
-        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-2
+        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer
           lg:divide-x lg:divide-gray-300"
         href="https://www.ufpr.br/portalufpr/"
         target="_blank"
