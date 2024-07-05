@@ -5,6 +5,7 @@ import Image from "next/image";
 import UfprLogo from "../../public/ufpr.jpg";
 import TuntsLogo from "../../public/tunts.png";
 import RD2Logo from "../../public/deskmy.png";
+import PierLogo from "../../public/pier.webp";
 import { useTranslation } from "next-i18next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -25,6 +26,29 @@ export default function Work() {
       <a
         className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer mt-32
         lg:divide-x lg:divide-gray-300"
+        href="https://pier.digital"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={PierLogo}
+          alt="pier"
+          width={120}
+          height={120}
+          objectFit="cover"
+          className="rounded"
+        />
+        <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
+          <h3 className="font-bold text-xl">Software Engineer II</h3>
+          <p className="text-sm">Pier</p>
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
+            2024 -
+          </label>
+        </div>
+      </a>
+      <a
+        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer 
+        lg:divide-x lg:divide-gray-300"
         href="https://deskmy.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -42,7 +66,7 @@ export default function Work() {
           <p className="text-sm">deskmy</p>
           <p className="text-sm mb-3">ReactJS | Django</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
-            2023 -
+            2023 - 2024
           </label>
         </div>
       </a>
