@@ -82,9 +82,10 @@ export default function Home() {
               className="cursor-pointer hover:opacity-50 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://angular.io/"
+              href="https://www.ruby-lang.org/"
             >
-              <IoLogoAngular size={120} color="darkred" />
+              <img src="/ruby.webp" className="h-24" alt="ruby" />
+              {/* <IoLogoAngular size={120} color="darkred" /> */}
             </a>
             <a
               className="cursor-pointer hover:opacity-50 transition duration-300"
@@ -100,7 +101,7 @@ export default function Home() {
               rel="noopener noreferrer"
               href="#"
             >
-              <IoLogoPython size={120} color="blue" />
+              <img src="/python.webp" className="h-24" alt="Python" />
             </a>
           </div>
           <Work />
