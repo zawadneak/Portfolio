@@ -26,7 +26,7 @@ export default function Project({
     >
       <img
         src={image}
-        className="h-40 rounded w-56 object-cover shadow-md lg:col-span-1"
+        className="h-40 rounded w-40 object-fit shadow-md lg:col-span-1"
       />
       <div className="flex flex-col items-start lg:col-span-3 text-center">
         <span className="flex items-center">

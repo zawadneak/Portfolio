@@ -5,12 +5,11 @@ export default function useProjects() {
 
   const projects = [
     {
-      title: "the collection",
+      title: "gaming vault",
       tech: "Astro | React | Golang",
       year: "2023",
       description: t("projects.the-collection.description"),
-      image:
-        "https://nyuxmbuskvnmblumetwr.supabase.co/storage/v1/object/public/collection-bucket/branding/logo-min.png",
+      image: "/gamingvault-full.svg",
       web: "https://thecollection.curistudios.com/",
     },
     {
@@ -18,7 +17,8 @@ export default function useProjects() {
       tech: "React | Supabase",
       year: "2023",
       description: t("projects.just-poker.description"),
-      image: "https://justpoker.curistudios.com/assets/assets/branding/just-poker.png",
+      image:
+        "https://justpoker.curistudios.com/assets/assets/branding/just-poker.png",
       web: "https://justpoker.curistudios.com/",
     },
     // {
