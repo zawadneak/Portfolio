@@ -23,10 +23,10 @@
       "description": "My first app built in VueJS. This mini-game was developed with pure HTML/CSS, and with vue script. I decided to add this little project to my portfolio, since it was one of the ones I had the most fun while developing it!"
     },
     "just-poker": {
-      "description": "An offline poker game. Focused on simplicity and unique features, such as tournaments and career mode (coming soon!). Part of the curistudios project."
+      "description": "An offline poker game. Focused on simplicity."
     },
     "the-collection": {
-      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Go. Part of the curistudios project."
+      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Go."
     }
   },
   "education": "Education",

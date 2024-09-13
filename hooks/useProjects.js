@@ -5,12 +5,12 @@ export default function useProjects() {
 
   const projects = [
     {
-      title: "gaming vault",
+      title: "thatgaming.app",
       tech: "Astro | React | Golang",
-      year: "2023",
+      year: "2023 -",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",
-      web: "https://thecollection.curistudios.com/",
+      web: "https://thatgaming.app",
     },
     {
       title: "JustPoker",
@@ -18,8 +18,8 @@ export default function useProjects() {
       year: "2023",
       description: t("projects.just-poker.description"),
       image:
-        "https://justpoker.curistudios.com/assets/assets/branding/just-poker.png",
-      web: "https://justpoker.curistudios.com/",
+        "https://justpoker.netlify.app/assets/assets/branding/just-poker.png",
+      web: "https://justpoker.netlify.app/",
     },
     // {
     //   title: "The Krypt",

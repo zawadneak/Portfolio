@@ -25,10 +25,10 @@
       "description": "Meu primeiro aplicativo construído em VueJS. \nEste mini-jogo foi desenvolvido com puro HTML/CSS, e com script vue. \nResolvi adicionar este pequeno projeto ao meu portfólio, pois foi um dos que mais me diverti ao desenvolvê-lo!"
     },
     "just-poker": {
-      "description": "Um jogo de poker offline. Foco na simplicidade e features únicas, como modos torneio e carreira (em breve!). Parte do projeto curistudios."
+      "description": "Um jogo de poker offline. Foco na simplicidade."
     },
     "the-collection": {
-      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go. Parte do projeto curistudios."
+      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go."
     }
   },
   "education": "Educação",
