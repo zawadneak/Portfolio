@@ -6,7 +6,7 @@ export default function useProjects() {
   const projects = [
     {
       title: "thatgaming.app",
-      tech: "Astro | React | Golang",
+      tech: "Astro + React | Ruby on Rails",
       year: "2023 -",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",
@@ -14,7 +14,7 @@ export default function useProjects() {
     },
     {
       title: "JustPoker",
-      tech: "React | Supabase",
+      tech: "React",
       year: "2023",
       description: t("projects.just-poker.description"),
       image:
