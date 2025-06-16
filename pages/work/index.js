@@ -40,7 +40,7 @@ export default function Work() {
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">Software Engineer II</h3>
-          <p className="text-sm">Pier</p>
+          <p className="text-sm">Pier (insuretech)</p>
           <p className="text-sm">ReactJS | React Native | Ruby on Rails</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
             2024 -
@@ -64,8 +64,10 @@ export default function Work() {
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("fullstack-developer")}</h3>
-          <p className="text-sm">deskmy</p>
-          <p className="text-sm mb-3">ReactJS | Django</p>
+          <p className="text-sm">deskmy (virtual office platform)</p>
+          <p className="text-sm mb-3">
+            ReactJS | Django | NodeJS | WebRTC | RabbitMQ
+          </p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
             2021 - 2024
           </label>
@@ -88,7 +90,7 @@ export default function Work() {
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("development-intern")}</h3>
-          <p className="text-sm">Tunts</p>
+          <p className="text-sm">Tunts Rocks (software house)</p>
           <p className="text-sm mb-3">
             Angular | Spring | Android | NodeJS | PostgreSQL
           </p>
@@ -114,7 +116,7 @@ export default function Work() {
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("backend-developer")}</h3>
-          <p className="text-sm">Sistema Lojinha UFPR - Projeto de Extensão</p>
+          <p className="text-sm">UFPR - {t("projects.ufpr-extension")}</p>
           <p className="text-sm mb-3">React Native | NodeJS | MongoDB</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-14">
             2020

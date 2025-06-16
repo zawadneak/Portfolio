@@ -25,7 +25,7 @@ export default function Projects() {
     <PageLayout>
       <div className="flex flex-col items-center justify-center py-2">
         <Head>
-          <title>{t("projects.label")}| Lucas Zawadneak</title>
+          <title>{t("projects.label")} | Lucas Zawadneak</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
