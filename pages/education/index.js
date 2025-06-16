@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Footer from "../../components/Footer";
+import { useTranslation } from "next-i18next";
 import PageLayout from "../../components/PageLayout";
 
 import UfprLogo from "../../public/ufpr.jpg";
@@ -19,6 +20,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 export default function Education() {
+  const { t } = useTranslation();
   const variants = {
     hidden: { opacity: 0, x: -50 },
     show: { opacity: 1, x: 0 },
@@ -28,7 +30,7 @@ export default function Education() {
     <PageLayout>
       <div className="flex flex-col items-center justify-center py-2">
         <Head>
-          <title>Educação | Lucas Zawadneak</title>
+          <title>{t("education.label")} | Lucas Zawadneak</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -57,10 +59,10 @@ export default function Education() {
                 Universidade Tecnológica Federal do Paraná
               </h3>
               <p className="text-sm mb-3">
-                Pós Graduação em Inteligência Artificial
+                {t("education.postgraduate.description")}
               </p>
               <label className="bg-blue-900 rounded p-1 px-3 text-white font-bold text-sm w-auto">
-                2024 -
+                2024 - 2025
               </label>
             </div>
           </motion.a>
@@ -87,15 +89,11 @@ export default function Education() {
               <h3 className="font-bold text-xl">
                 Universidade Federal do Paraná
               </h3>
-              <p className="text-sm">
-                Engenharia de Bioprocessos e Biotecnologia (2019)
-              </p>
               <p className="text-sm mb-3">
-                Tecnologia em Análise e Desenvolvimento de Sistemas (2020 -
-                2023)
+                {t("education.university.description")}
               </p>
               <label className="bg-blue-900 rounded p-1 px-3 text-white font-bold text-sm w-auto">
-                2019 - 2023
+                2020 - 2023
               </label>
             </div>
           </motion.a>
@@ -126,7 +124,7 @@ export default function Education() {
               </label>
             </div>
           </motion.a>
-          <motion.a
+          {/* <motion.a
             variants={variants}
             initial="hidden"
             animate="show"
@@ -148,7 +146,7 @@ export default function Education() {
               <h3 className="font-bold text-xl">Udemy</h3>
               <p className="text-sm">Angular | Android | Vue | Flutter</p>
             </div>
-          </motion.a>
+          </motion.a> */}
         </main>
         <Footer />
       </div>

@@ -41,7 +41,8 @@ export default function Work() {
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">Software Engineer II</h3>
           <p className="text-sm">Pier</p>
-          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
+          <p className="text-sm">ReactJS | React Native | Ruby on Rails</p>
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
             2024 -
           </label>
         </div>
@@ -66,31 +67,7 @@ export default function Work() {
           <p className="text-sm">deskmy</p>
           <p className="text-sm mb-3">ReactJS | Django</p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
-            2023 - 2024
-          </label>
-        </div>
-      </a>
-      <a
-        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer
-        lg:divide-x lg:divide-gray-300"
-        href="https://deskmy.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          src={RD2Logo}
-          alt="rd2"
-          width={120}
-          height={120}
-          objectFit="cover"
-          className="rounded"
-        />
-        <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
-          <h3 className="font-bold text-xl">{t("development-intern")}</h3>
-          <p className="text-sm">deskmy</p>
-          <p className="text-sm mb-3">ReactJS | Django</p>
-          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3">
-            2021 - 2023
+            2021 - 2024
           </label>
         </div>
       </a>

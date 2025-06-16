@@ -1,6 +1,6 @@
 {
   "fullstack-developer.label": "Fullstack Developer",
-  "description": "Welcome to my portfolio! I’m a 23-year-old software engineer from Curitiba with a passion for building innovative solutions across the full technology stack – front-end, back-end, and mobile. My programming journey began at 16, and it has grown into a fulfilling career dedicated to developing impactful and user-centered applications. Currently, I’m advancing my expertise by pursuing a postgraduate degree in artificial intelligence. Let’s connect and create something extraordinary together!",
+  "description": "Welcome to my portfolio! I'm a software engineer, born in Curitiba (Brazil), passionate about technology and the power it has to impact real people. I have full-stack experience — working with frontend, mobile, but mostly backend. Let's connect and build something amazing together?",
   "talk-to-me.label": "Talk to me!",
   "try-my-email": "You can try contacting me by my email",
   "other-social-media": "Or by any other social media down below!",
@@ -29,7 +29,15 @@
       "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Go."
     }
   },
-  "education": "Education",
+  "education": {
+    "label": "Education",
+    "university": {
+      "description": "Bachelor's degree in Software Engineering"
+    },
+    "postgraduate": {
+      "description": "Postgraduate in Artificial Intelligence"
+    }
+  },
   "contact": "Contact",
   "development-intern": "Development Intern",
   "backend-developer": "Backend & Mobile Developer",

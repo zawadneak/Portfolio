@@ -1,6 +1,6 @@
 {
   "fullstack-developer.label": "Desenvolvedor Fullstack",
-  "description": "Bem-vindo ao meu portfólio! Sou um engenheiro de software de 23 anos, natural de Curitiba, com paixão por criar soluções inovadoras em toda a stack de tecnologia – front-end, back-end e mobile. Minha jornada na programação começou aos 16 anos e se transformou em uma carreira dedicada a desenvolver aplicações impactantes e centradas no usuário. Atualmente, estou aprimorando minhas habilidades cursando uma pós-graduação em inteligência artificial. Vamos nos conectar e construir algo extraordinário juntos!",
+  "description": "Bem-vindo ao meu portfólio! Sou um engenheiro de software, nascido em Curitiba, apaixonado pela tecnologia e o poder que ela tem de impactar a vida de pessoas reais. Tenho experiência fullstack, tanto com frontend, mobile, mas principalmente backend. Vamos nos conectar e contruir algo incível juntos?",
   "talk-to-me": {
     "label": "Fale comigo!"
   },
@@ -31,7 +31,15 @@
       "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go."
     }
   },
-  "education": "Educação",
+  "education": {
+    "label": "Educação",
+    "university": {
+      "description": "Análise e Desenvolvimento de Sistemas"
+    },
+    "postgraduate": {
+      "description": "Pós-graduação em Inteligência Artificial"
+    }
+  },
   "contact": "Contato",
   "development-intern": "Estagiário de Desenvolvimento",
   "backend-developer": "Desenvolvedor Backend & Mobile",

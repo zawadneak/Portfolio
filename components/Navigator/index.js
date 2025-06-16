@@ -33,7 +33,9 @@ export default function Navigator() {
       </Link>
       <div className="flex  items-center justify-center lg:justify-end">
         <Link legacyBehavior href="/education">
-          <a className="mr-4 cursor-pointer font-semibold">{t("education")}</a>
+          <a className="mr-4 cursor-pointer font-semibold">
+            {t("education.label")}
+          </a>
         </Link>
         <Link legacyBehavior href="/projects">
           <a className="mr-4 cursor-pointer font-semibold">
