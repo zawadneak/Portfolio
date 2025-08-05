@@ -10,7 +10,7 @@ export default function useProjects() {
       year: "2023 -",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",
-      web: "https://thatgaming.app",
+      web: "https://gamingapp.lucaszawadneak.me",
     },
     {
       title: "JustPoker",
