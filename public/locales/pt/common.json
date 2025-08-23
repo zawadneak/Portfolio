@@ -28,7 +28,7 @@
       "description": "Um jogo de poker offline. Foco na simplicidade."
     },
     "the-collection": {
-      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go."
+      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Rails."
     },
     "ufpr-extension": "Projeto de Extensão | Loja online para ajuda geral durante pandemia de COVID-19"
   },
