@@ -5,9 +5,17 @@ export default function useProjects() {
 
   const projects = [
     {
+      title: "callvin",
+      tech: "ReactJS | Ruby on Rails | WebRTC",
+      year: "2025",
+      description: t("projects.callvin.description"),
+      image: "callvin.png",
+      web: "https://alpha.call.vin",
+    },
+    {
       title: "thatgaming.app",
       tech: "Astro + React | Ruby on Rails | Webscraping",
-      year: "2023 -",
+      year: "2024",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",
       web: "https://gamingapp.lucaszawadneak.me",

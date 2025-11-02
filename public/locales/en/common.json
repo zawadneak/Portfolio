@@ -28,6 +28,9 @@
     "the-collection": {
       "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Rails."
     },
+    "callvin": {
+      "description": "A video call platform focused on ease of use and high quality. Developed with ReactJS, Ruby on Rails and WebRTC."
+    },
     "ufpr-extension": "Research Extention Project | Online shop for general aid during the COVID-19 pandemic"
   },
   "education": {
