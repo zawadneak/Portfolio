@@ -4,8 +4,9 @@ import Image from "next/image";
 
 import UfprLogo from "../../public/ufpr.jpg";
 import TuntsLogo from "../../public/tunts.png";
-import RD2Logo from "../../public/deskmy.png";
-import PierLogo from "../../public/pier.webp";
+import RD2Logo from "../../public/deskmy.jpg";
+import PierLogo from "../../public/pier.png";
+import SezzleLogo from "../../public/sezzle.jpg";
 import { useTranslation } from "next-i18next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -31,19 +32,44 @@ export default function Work() {
         rel="noopener noreferrer"
       >
         <Image
+          src={SezzleLogo}
+          alt="sezzle"
+          width={120}
+          height={120}
+          objectFit="cover"
+          className="rounded-lg"
+        />
+        <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
+          <h3 className="font-bold text-xl">Software Engineer II</h3>
+          <p className="text-sm">Sezzle</p>
+          {/* <p className="text-sm">ReactJS | React Native | Go</p> */}
+          <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
+            2026 -
+          </label>
+        </div>
+      </a>
+      <a
+        className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer         lg:divide-x lg:divide-gray-300"
+        href="https://pier.digital"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
           src={PierLogo}
           alt="pier"
           width={120}
           height={120}
           objectFit="cover"
-          className="rounded"
+          className="rounded-lg"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">Software Engineer III</h3>
           <p className="text-sm">Pier (insurtech)</p>
-          <p className="text-sm">ReactJS | React Native | Ruby on Rails</p>
+          <p className="text-sm">
+            ReactJS | React Native | Ruby on Rails | Kafka | Deno
+          </p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
-            2025 -
+            2025 - 2026ß
           </label>
         </div>
       </a>
@@ -60,12 +86,14 @@ export default function Work() {
           width={120}
           height={120}
           objectFit="cover"
-          className="rounded"
+          className="rounded-lg"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">Software Engineer II</h3>
           <p className="text-sm">Pier (insurtech)</p>
-          <p className="text-sm">ReactJS | React Native | Ruby on Rails</p>
+          <p className="text-sm">
+            ReactJS | React Native | Ruby on Rails | Kafka | Deno
+          </p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
             2024 - 2025
           </label>
@@ -84,7 +112,7 @@ export default function Work() {
           width={120}
           height={120}
           objectFit="cover"
-          className="rounded"
+          className="rounded-lg"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("fullstack-developer")}</h3>
@@ -110,7 +138,7 @@ export default function Work() {
           width={120}
           height={120}
           objectFit="cover"
-          className="rounded"
+          className="rounded-lg"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("development-intern")}</h3>
@@ -123,7 +151,7 @@ export default function Work() {
           </label>
         </div>
       </a>
-      <a
+      {/* <a
         className="flex flex-col lg:flex-row items-center  bg-gray-100 p-5 rounded shadow-md w-full mb-4 cursor-pointer
           lg:divide-x lg:divide-gray-300"
         href="https://www.ufpr.br/portalufpr/"
@@ -136,7 +164,7 @@ export default function Work() {
           width={120}
           height={120}
           objectFit="cover"
-          className="rounded"
+          className="rounded-lg"
         />
         <div className="flex flex-col items-center lg:items-start mt-1 lg:mt-0 lg:ml-5 lg:pl-5">
           <h3 className="font-bold text-xl">{t("backend-developer")}</h3>
@@ -146,7 +174,7 @@ export default function Work() {
             2020
           </label>
         </div>
-      </a>
+      </a> */}
     </>
   );
 }

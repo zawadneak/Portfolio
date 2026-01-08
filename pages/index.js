@@ -66,6 +66,14 @@ export default function Home() {
               className="cursor-pointer hover:opacity-50 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            >
+              <IoLogoJavascript size={120} color="gold" />
+            </a>
+            <a
+              className="cursor-pointer hover:opacity-50 transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://reactjs.org/"
             >
               <IoLogoReact size={120} color="darkblue" />
@@ -91,17 +99,17 @@ export default function Home() {
               className="cursor-pointer hover:opacity-50 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+              href="#"
             >
-              <IoLogoJavascript size={120} color="gold" />
+              <img src="/python.webp" className="h-24" alt="Python" />
             </a>
             <a
-              className="cursor-pointer hover:opacity-50 transition duration-300"
+              className="cursor-pointer hover:opacity-50 transition duration-300 scale-[1.6]"
               target="_blank"
               rel="noopener noreferrer"
               href="#"
             >
-              <img src="/python.webp" className="h-24" alt="Python" />
+              <img src="/go.png" className="h-24" alt="Go" />
             </a>
           </div>
           <Work />
