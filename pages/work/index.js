@@ -69,7 +69,7 @@ export default function Work() {
             ReactJS | React Native | Ruby on Rails | Kafka | Deno
           </p>
           <label className="bg-blue-900 rounded p-1 text-white font-bold text-sm w-auto px-3 mt-3">
-            2025 - 2026ß
+            2025 - 2026
           </label>
         </div>
       </a>
