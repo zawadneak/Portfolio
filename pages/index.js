@@ -8,9 +8,12 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { motion } from "framer-motion";
 
+const BASE_URL = "https://lucaszawadneak.com";
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
+      locale,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
@@ -36,14 +39,60 @@ const fade = (delay = 0) => ({
   transition: { duration: 0.6, delay, ease: [0.25, 0.46, 0.45, 0.94] },
 });
 
-export default function Home() {
+export default function Home({ locale }) {
   const { t } = useTranslation();
+
+  const canonicalPath = locale === "en" ? "/" : `/${locale}/`;
+  const description =
+    "Software Engineer born in Curitiba, Brazil. I build full-stack web, mobile, and backend systems. Currently SWE II @ Sezzle.";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Lucas Zawadneak",
+    url: BASE_URL,
+    jobTitle: "Software Engineer",
+    worksFor: { "@type": "Organization", name: "Sezzle" },
+    sameAs: [
+      "https://github.com/zawadneak",
+      "https://www.linkedin.com/in/lucaszawadneak/",
+      "https://twitter.com/_cassilha_",
+      "https://stackoverflow.com/users/12705405/lucas-zawadneak",
+    ],
+  };
 
   return (
     <PageLayout>
       <Head>
-        <title>Lucas Zawadneak</title>
+        <title>Lucas Zawadneak — Software Engineer</title>
+        <meta name="description" content={description} />
+        <meta name="author" content="Lucas Zawadneak" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href={`${BASE_URL}${canonicalPath}`} />
+        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/`} />
+        <link rel="alternate" hrefLang="pt" href={`${BASE_URL}/pt/`} />
+        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE_URL}${canonicalPath}`} />
+        <meta property="og:title" content="Lucas Zawadneak — Software Engineer" />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`${BASE_URL}/me.jpg`} />
+        <meta property="og:locale" content={locale === "pt" ? "pt_BR" : "en_US"} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@_cassilha_" />
+        <meta name="twitter:title" content="Lucas Zawadneak — Software Engineer" />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${BASE_URL}/me.jpg`} />
+
+        {/* JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </Head>
 
       {/* ── HERO ── */}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lucaszawadneak.com/sitemap.xml

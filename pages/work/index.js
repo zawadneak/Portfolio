@@ -12,9 +12,12 @@ import PierLogo from "../../public/pier.png";
 import RD2Logo from "../../public/deskmy.jpg";
 import TuntsLogo from "../../public/tunts.png";
 
+const BASE_URL = "https://lucaszawadneak.com";
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
+      locale,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
@@ -262,16 +265,42 @@ function TimelineContent() {
   );
 }
 
-export default function Work({ standalone = true }) {
+export default function Work({ standalone = true, locale = "en" }) {
   if (!standalone) {
     return <TimelineContent />;
   }
 
+  const canonicalPath = locale === "en" ? "/work" : `/${locale}/work`;
+  const title = "Experience | Lucas Zawadneak";
+  const description =
+    "A timeline of Lucas Zawadneak's professional experience across fintech, insurtech, and software house companies.";
+
   return (
     <PageLayout>
       <Head>
-        <title>Experience | Lucas Zawadneak</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content="Lucas Zawadneak" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href={`${BASE_URL}${canonicalPath}`} />
+        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/work`} />
+        <link rel="alternate" hrefLang="pt" href={`${BASE_URL}/pt/work`} />
+        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/work`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE_URL}${canonicalPath}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`${BASE_URL}/me.jpg`} />
+        <meta property="og:locale" content={locale === "pt" ? "pt_BR" : "en_US"} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@_cassilha_" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${BASE_URL}/me.jpg`} />
       </Head>
       <div style={{ paddingTop: "68px", background: "#080808", minHeight: "100vh" }}>
         <TimelineContent />
@@ -280,3 +309,4 @@ export default function Work({ standalone = true }) {
     </PageLayout>
   );
 }
+

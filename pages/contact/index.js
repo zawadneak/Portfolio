@@ -12,9 +12,12 @@ import {
   IoLogoTwitter,
 } from "react-icons/io5";
 
+const BASE_URL = "https://lucaszawadneak.com";
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
+      locale,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
@@ -37,14 +40,40 @@ const socials = [
   },
 ];
 
-export default function Contact() {
+export default function Contact({ locale = "en" }) {
   const { t } = useTranslation();
+
+  const canonicalPath = locale === "en" ? "/contact" : `/${locale}/contact`;
+  const title = `${t("talk-to-me.label")} | Lucas Zawadneak`;
+  const description =
+    "Get in touch with Lucas Zawadneak via email or social media — GitHub, LinkedIn, Twitter, Instagram, Stack Overflow.";
 
   return (
     <PageLayout>
       <Head>
-        <title>{`${t("talk-to-me.label")} | Lucas Zawadneak`}</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content="Lucas Zawadneak" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href={`${BASE_URL}${canonicalPath}`} />
+        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/contact`} />
+        <link rel="alternate" hrefLang="pt" href={`${BASE_URL}/pt/contact`} />
+        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/contact`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE_URL}${canonicalPath}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`${BASE_URL}/me.jpg`} />
+        <meta property="og:locale" content={locale === "pt" ? "pt_BR" : "en_US"} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@_cassilha_" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${BASE_URL}/me.jpg`} />
       </Head>
 
       <div

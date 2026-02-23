@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://lucaszawadneak.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucaszawadneak.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Work / Experience -->
+  <url>
+    <loc>https://lucaszawadneak.com/work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/work"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaszawadneak.com/pt/work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/work"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://lucaszawadneak.com/projects</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/projects"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/projects"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaszawadneak.com/pt/projects</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/projects"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/projects"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Education -->
+  <url>
+    <loc>https://lucaszawadneak.com/education</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/education"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/education"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaszawadneak.com/pt/education</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/education"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/education"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://lucaszawadneak.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaszawadneak.com/pt/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaszawadneak.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lucaszawadneak.com/pt/contact"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

@@ -10,9 +10,12 @@ import UfprLogo from "../../public/ufpr.jpg";
 import UTFPRLogo from "../../public/utfprlogo.png";
 import RocketseatLogo from "../../public/rocketseat.jpeg";
 
+const BASE_URL = "https://lucaszawadneak.com";
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
+      locale,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
@@ -23,8 +26,13 @@ const TEXT = "#E8E8E0";
 const MUTED = "#555";
 const BORDER = "#1D1D1D";
 
-export default function Education() {
+export default function Education({ locale = "en" }) {
   const { t } = useTranslation();
+
+  const canonicalPath = locale === "en" ? "/education" : `/${locale}/education`;
+  const title = `${t("education.label")} | Lucas Zawadneak`;
+  const description =
+    "Lucas Zawadneak's academic background: Software Engineering at UFPR and a postgraduate in AI at UTFPR.";
 
   const entries = [
     {
@@ -56,9 +64,31 @@ export default function Education() {
   return (
     <PageLayout>
       <Head>
-        <title>{`${t("education.label")} | Lucas Zawadneak`}</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content="Lucas Zawadneak" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href={`${BASE_URL}${canonicalPath}`} />
+        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/education`} />
+        <link rel="alternate" hrefLang="pt" href={`${BASE_URL}/pt/education`} />
+        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/education`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE_URL}${canonicalPath}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`${BASE_URL}/me.jpg`} />
+        <meta property="og:locale" content={locale === "pt" ? "pt_BR" : "en_US"} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@_cassilha_" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${BASE_URL}/me.jpg`} />
       </Head>
+
 
       <div
         style={{
