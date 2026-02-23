@@ -1,10 +1,16 @@
-import { t } from "i18next";
 import Head from "next/head";
-import Footer from "../../components/Footer";
-import PageLayout from "../../components/PageLayout";
-
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import PageLayout from "../../components/PageLayout";
+import Footer from "../../components/Footer";
+import { motion } from "framer-motion";
+import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoStackoverflow,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -14,30 +20,163 @@ export async function getStaticProps({ locale }) {
   };
 }
 
+const ACCENT = "#FF2D20";
+const TEXT = "#E8E8E0";
+const MUTED = "#555";
+const BORDER = "#1D1D1D";
+
+const socials = [
+  { href: "https://twitter.com/_cassilha_", Icon: IoLogoTwitter, label: "Twitter" },
+  { href: "https://www.linkedin.com/in/lucaszawadneak/", Icon: IoLogoLinkedin, label: "LinkedIn" },
+  { href: "https://www.instagram.com/_cassilha", Icon: IoLogoInstagram, label: "Instagram" },
+  { href: "https://github.com/zawadneak", Icon: IoLogoGithub, label: "GitHub" },
+  {
+    href: "https://stackoverflow.com/users/12705405/lucas-zawadneak",
+    Icon: IoLogoStackoverflow,
+    label: "Stack Overflow",
+  },
+];
+
 export default function Contact() {
   const { t } = useTranslation();
 
   return (
     <PageLayout>
-      <div className="flex flex-col items-center justify-center py-2">
-        <Head>
-          <title>{t("talk-to-me.label")} | Lucas Zawadneak</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <Head>
+        <title>{`${t("talk-to-me.label")} | Lucas Zawadneak`}</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </Head>
 
-        <main className="flex flex-col items-center justify-center max-w-6xl w-full flex-1 p-5 lg:px-20 text-center mt-5">
-          <div className="w-full text-left">
-            <h1 className="font-bold text-4xl">{t("talk-to-me.label")}</h1>
-            <p className="mt-3">{t("try-my-email")}</p>
-            <p>{t("other-social-media")}</p>
+      <div
+        style={{
+          paddingTop: "68px",
+          background: "#080808",
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <main
+          style={{
+            flex: 1,
+            padding: "clamp(48px, 10vh, 120px) clamp(20px, 6vw, 80px)",
+            maxWidth: "1440px",
+            margin: "0 auto",
+            width: "100%",
+          }}
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            style={{
+              fontFamily: '"JetBrains Mono", monospace',
+              fontSize: "11px",
+              color: "#333",
+              letterSpacing: "0.28em",
+              textTransform: "uppercase",
+              marginBottom: "20px",
+            }}
+          >
+            {t("contact")}
+          </motion.p>
 
-            <span className="p-3 bg-red-400 mt-5 mb-5  flex w-64 items-center rounded justify-center">
-              <p className="font-bold text-white">lucaszawadneak@gmail.com</p>
-            </span>
-          </div>
+          <motion.h1
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.18 }}
+            style={{
+              fontFamily: '"Bebas Neue", sans-serif',
+              fontSize: "clamp(4rem, 13vw, 12rem)",
+              lineHeight: 0.85,
+              color: TEXT,
+              margin: "0 0 48px",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            {t("talk-to-me.label")}
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            style={{ borderTop: `1px solid ${BORDER}`, paddingTop: "40px" }}
+          >
+            <p
+              style={{
+                fontFamily: "Outfit, sans-serif",
+                fontSize: "14px",
+                color: MUTED,
+                marginBottom: "24px",
+                maxWidth: "480px",
+                lineHeight: 1.7,
+              }}
+            >
+              {t("try-my-email")} — {t("other-social-media")}
+            </p>
+
+            <a
+              href="mailto:lucaszawadneak@gmail.com"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                fontFamily: '"JetBrains Mono", monospace',
+                fontSize: "clamp(14px, 2vw, 20px)",
+                color: ACCENT,
+                letterSpacing: "0.04em",
+                padding: "14px 24px",
+                border: `1px solid ${ACCENT}`,
+                transition: "background 0.25s ease, color 0.25s ease",
+                marginBottom: "48px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = ACCENT;
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = ACCENT;
+              }}
+            >
+              lucaszawadneak@gmail.com
+            </a>
+
+            <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+              {socials.map(({ href, Icon, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    color: "#333",
+                    fontFamily: '"JetBrains Mono", monospace',
+                    fontSize: "11px",
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = TEXT)
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#333")
+                  }
+                >
+                  <Icon size={16} />
+                  {label}
+                </a>
+              ))}
+            </div>
+          </motion.div>
         </main>
 
-        <Footer absolute />
+        <Footer />
       </div>
     </PageLayout>
   );

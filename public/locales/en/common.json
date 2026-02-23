@@ -8,6 +8,11 @@
     "label": "Download CV"
   },
   "hello-there": "Hello there! I'm Lucas",
+  "greeting": "hello, i'm",
+  "present": "present",
+  "experience": "experience",
+  "tools": "tools",
+  "scroll": "scroll",
   "projects": {
     "label": "Projects",
     "the-krypt": {

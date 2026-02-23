@@ -5,11 +5,16 @@
     "label": "Fale comigo!"
   },
   "try-my-email": "Você pode tentar entrar em contato comigo pelo meu e-mail",
-  "other-social-media": "Ou por qualquer outra mídia social abaixo!",
+  "other-social-media": "Ou por qualquer outra rede social abaixo!",
   "download-cv": {
     "label": "Baixar currículo"
   },
   "hello-there": "Olá! Sou o Lucas.",
+  "greeting": "olá, eu sou",
+  "present": "presente",
+  "experience": "experiência",
+  "tools": "ferramentas",
+  "scroll": "rolar",
   "projects": {
     "label": "Projetos",
     "the-krypt": {
