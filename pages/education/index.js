@@ -8,7 +8,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import UfprLogo from "../../public/ufpr.jpg";
 import UTFPRLogo from "../../public/utfprlogo.png";
-import RocketseatLogo from "../../public/rocketseat.jpeg";
 
 const BASE_URL = "https://lucaszawadneak.com";
 
@@ -49,14 +48,6 @@ export default function Education({ locale = "en" }) {
       period: "2020 — 2023",
       logo: UfprLogo,
       href: "https://www.ufpr.br/portalufpr/",
-      logoStyle: { objectFit: "cover" },
-    },
-    {
-      institution: "Rocketseat GoStack",
-      description: "Bootcamp · ReactJS · React Native · NodeJS",
-      period: "2018",
-      logo: RocketseatLogo,
-      href: "https://rocketseat.com.br/",
       logoStyle: { objectFit: "cover" },
     },
   ];
