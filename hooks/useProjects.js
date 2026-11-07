@@ -13,7 +13,7 @@ export default function useProjects() {
     },
     {
       title: "Savingpoint",
-      tech: "Astro + React | Ruby on Rails | Webscraping",
+      tech: "Astro + React | Go | Webscraping",
       year: "2024",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",

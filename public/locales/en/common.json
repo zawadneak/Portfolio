@@ -31,7 +31,7 @@
       "description": "An offline poker game. Focused on simplicity."
     },
     "the-collection": {
-      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Rails."
+      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Go."
     },
     "callvin": {
       "description": "A video call platform focused on ease of use and high quality. Developed with ReactJS, Ruby on Rails and WebRTC."

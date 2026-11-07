@@ -33,35 +33,12 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
 .current-role a { color:var(--ink); font-weight:700; }
 .current-role span { display:block; margin-top:2px; }
 .portrait { order:-1; margin:0; }
-.portrait img { display:block; width:96px; height:96px; object-fit:cover; border-radius:50%; background:var(--mist); }
-.portrait figcaption { margin-top:13px; text-align:center; font-size:11px; color:var(--slate); }
+.portrait img { display:block; width:144px; height:144px; object-fit:cover; border-radius:50%; background:var(--mist); }
 .section { padding-block:48px 60px; border-top:1px solid var(--line); }
 .section-heading { display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:30px; }
 .section-heading h2 { font-size:23px; letter-spacing:-.7px; }
 .project-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; }
-.project-art { height:232px; border-radius:8px; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; }
-.call-art { background:#eaf0fc; gap:18px; }
-.call-person { width:116px; height:136px; overflow:hidden; border-radius:12px; display:flex; align-items:flex-end; }
-.call-person svg { width:100%; }
-.person-one { background:#c7d6f4; transform:rotate(-7deg); }
-.person-one svg { fill:#7396d6; }
-.person-two { background:#d9e1ef; transform:rotate(7deg); }
-.person-two svg { fill:#92a7c9; }
-.connection { display:flex; align-items:center; gap:4px; height:40px; }
-.connection span { display:block; width:3px; height:12px; background:#5079c6; border-radius:3px; }
-.connection span:nth-child(2),.connection span:nth-child(4) { height:23px; }
-.connection span:nth-child(3) { height:34px; }
-.games-art { background:#edf2ef; }
-.game-library { max-width:100%; display:flex; gap:11px; position:relative; align-items:center; padding:20px; }
-.game-cover { width:88px; height:126px; border-radius:5px; display:flex; align-items:center; justify-content:center; box-shadow:0 9px 12px #253f4a0c; }
-.game-cover span { color:#ffffffb3; font-size:48px; line-height:1; }
-.cover-one { background:#748e87; transform:rotate(-8deg) translateY(3px); }
-.cover-two { background:#93aaa0; transform:translateY(-10px); }
-.cover-three { background:#b2c0ac; transform:rotate(8deg) translateY(3px); }
-.library-line { position:absolute; bottom:4px; left:2px; right:2px; height:3px; background:#d0dcd4; }
-.project-image-link { display:block; border-radius:8px; }
-.project-image-link:hover .project-art { outline:1px solid #b1c0d6; outline-offset:-1px; }
-.project-title { display:flex; justify-content:space-between; align-items:baseline; margin-top:23px; gap:16px; }
+.project-title { display:flex; justify-content:space-between; align-items:baseline; gap:16px; }
 .project-title h2,.project-title h3 { font-size:22px; letter-spacing:-.65px; }
 .project-title>span { color:var(--slate); font-size:12px; }
 .project-description { font-size:14px; color:var(--slate); margin-top:12px; max-width:55ch; }
@@ -106,8 +83,6 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
  .intro h1 { font-size:48px; }
 
  .project-grid { gap:28px; }
- .call-art { gap:10px; }
- .call-person { width:90px; height:112px; }
  .contact-block { flex-direction:column; align-items:flex-start; }
 }
 @media(max-width:650px) {
@@ -121,17 +96,12 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
  .intro h1 { font-size:38px; letter-spacing:-1.6px; max-width:390px; }
  .intro-description { font-size:15px; margin-top:22px; }
 
- .portrait img { width:80px; height:80px; }
- .portrait figcaption { margin:0; text-align:left; font-size:12px; }
+ .portrait img { width:112px; height:112px; }
  .current-role { margin-top:30px; }
  .section { padding-block:32px 40px; }
  .section-heading h2 { font-size:21px; }
  .section-heading .text-link { font-size:11px; text-align:right; }
  .project-grid { grid-template-columns:minmax(0,1fr); gap:38px; }
- .project-art { height:220px; }
- .call-person { width:110px; height:134px; }
- .call-art { gap:18px; }
- .project-title { margin-top:18px; }
  .job { grid-template-columns:95px 1fr; gap:20px; }
  .job-period { font-size:11px; }
  .job h3 { font-size:17px; }
@@ -154,6 +124,4 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
 @media(max-width:360px) {
  .site-header nav { font-size:11px; gap:8px; }
  .language-link { padding-left:8px; font-size:11px; }
- .call-person { width:90px; height:116px; }
- .call-art { gap:12px; }
 }
