@@ -31,7 +31,7 @@
       "description": "An offline poker game. Focused on simplicity."
     },
     "the-collection": {
-      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Rails."
+      "description": "A game tracking app. Keep track of your played games, your backlog and your wishlist. Developed with Astro and Go."
     },
     "callvin": {
       "description": "A video call platform focused on ease of use and high quality. Developed with ReactJS, Ruby on Rails and WebRTC."
@@ -51,5 +51,36 @@
   "development-intern": "Development Intern",
   "backend-developer": "Backend & Mobile Developer",
   "soon": "Soon",
-  "fullstack-developer": "Fullstack Developer"
+  "fullstack-developer": "Fullstack Developer",
+  "redesign": {
+    "home": "Home",
+    "navigation": "Main navigation",
+    "work": "Experience",
+    "email": "Email",
+    "role": "Software engineer",
+    "headline": "Lucas Zawadneak",
+    "intro": "Full-stack development with a focus on backend systems.",
+    "seeProjects": "View projects",
+    "getInTouch": "Get in touch",
+    "current": "Software Engineer II at",
+    "location": "Curitiba, Brazil",
+    "selectedProjects": "Selected projects",
+    "allProjects": "All projects",
+    "visit": "Visit",
+    "visitProject": "Visit project",
+    "sourceCode": "Source code",
+    "experience": "Experience",
+    "fullExperience": "Full experience",
+    "now": "Current",
+    "fintech": "Financial technology",
+    "insurtech": "Insurance technology",
+    "virtualOffice": "Virtual office platform",
+    "softwareHouse": "Software development",
+    "contactHeading": "Contact",
+    "contactText": "Email is the best way to reach me.",
+    "projectsIntro": "Personal projects in video calling, game tracking, and mobile development.",
+    "workIntro": "Roles at Sezzle, Pier, Deskmy, and Tunts Rocks.",
+    "educationIntro": "Software engineering at UFPR and postgraduate studies in AI at UTFPR.",
+    "meta": "Lucas Zawadneak, software engineer in Curitiba, Brazil. Full-stack development with a focus on backend systems. Explore projects, experience, and contact details."
+  }
 }

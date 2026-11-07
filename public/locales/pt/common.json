@@ -33,7 +33,7 @@
       "description": "Um jogo de poker offline. Foco na simplicidade."
     },
     "the-collection": {
-      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Rails."
+      "description": "Um aplicativo para gerenciar seus jogos. Mantenha o controle de seus jogos jogados, sua lista de desejos e seu backlog. Desenvolvido com Astro e Go."
     },
     "callvin": {
       "description": "Uma plataforma de videochamadas focada na facilidade de uso e alta qualidade. Desenvolvido com ReactJS, Ruby on Rails e WebRTC."
@@ -53,5 +53,36 @@
   "development-intern": "Estagiário de Desenvolvimento",
   "backend-developer": "Desenvolvedor Backend & Mobile",
   "soon": "Em breve",
-  "fullstack-developer": "Desenvolvedor Fullstack"
+  "fullstack-developer": "Desenvolvedor Fullstack",
+  "redesign": {
+    "home": "Início",
+    "navigation": "Navegação principal",
+    "work": "Experiência",
+    "email": "Email",
+    "role": "Engenheiro de software",
+    "headline": "Lucas Zawadneak",
+    "intro": "Desenvolvimento fullstack com foco em sistemas backend.",
+    "seeProjects": "Ver projetos",
+    "getInTouch": "Entre em contato",
+    "current": "Software Engineer II na",
+    "location": "Curitiba, Brasil",
+    "selectedProjects": "Projetos selecionados",
+    "allProjects": "Todos os projetos",
+    "visit": "Visitar",
+    "visitProject": "Visitar projeto",
+    "sourceCode": "Código-fonte",
+    "experience": "Experiência",
+    "fullExperience": "Ver experiência",
+    "now": "Atual",
+    "fintech": "Tecnologia financeira",
+    "insurtech": "Tecnologia em seguros",
+    "virtualOffice": "Plataforma de escritório virtual",
+    "softwareHouse": "Desenvolvimento de software",
+    "contactHeading": "Contato",
+    "contactText": "Email é a melhor forma de falar comigo.",
+    "projectsIntro": "Projetos pessoais de videochamadas, gerenciamento de jogos e aplicativos mobile.",
+    "workIntro": "Experiência na Sezzle, Pier, Deskmy e Tunts Rocks.",
+    "educationIntro": "Engenharia de software na UFPR e pós-graduação em inteligência artificial na UTFPR.",
+    "meta": "Lucas Zawadneak, engenheiro de software em Curitiba. Desenvolvimento fullstack com foco em backend. Conheça meus projetos, experiência e formas de contato."
+  }
 }
