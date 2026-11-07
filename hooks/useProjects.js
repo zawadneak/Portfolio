@@ -12,12 +12,12 @@ export default function useProjects() {
       web: "https://alpha.call.vin",
     },
     {
-      title: "thatgaming.app",
+      title: "Savingpoint",
       tech: "Astro + React | Ruby on Rails | Webscraping",
       year: "2024",
       description: t("projects.the-collection.description"),
       image: "/gamingvault-full.svg",
-      web: "https://gamingapp.lucaszawadneak.me",
+      web: "https://beta.savingpoint.app/",
     },
     {
       title: "JustPoker",
