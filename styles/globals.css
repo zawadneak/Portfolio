@@ -104,7 +104,7 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
  .site-header nav { gap:17px; font-size:12px; }
  .intro { padding-block:56px; }
  .intro h1 { font-size:48px; }
- 
+
  .project-grid { gap:28px; }
  .call-art { gap:10px; }
  .call-person { width:90px; height:112px; }
@@ -120,7 +120,7 @@ h1,h2,h3 { font-weight:650; line-height:1.2; }
  .intro .role { margin-bottom:14px; }
  .intro h1 { font-size:38px; letter-spacing:-1.6px; max-width:390px; }
  .intro-description { font-size:15px; margin-top:22px; }
- 
+
  .portrait img { width:80px; height:80px; }
  .portrait figcaption { margin:0; text-align:left; font-size:12px; }
  .current-role { margin-top:30px; }
